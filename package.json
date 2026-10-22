@@ -1,0 +1,33 @@
+{
+  "name": "solodki-buketi",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "typecheck": "nuxt typecheck",
+    "postinstall": "nuxt prepare",
+    "images": "node scripts/optimize-images.mjs",
+    "deploy": "nuxt build --preset cloudflare_module && wrangler deploy"
+  },
+  "dependencies": {
+    "@iconify-json/lucide": "^1.2.145",
+    "@iconify-json/simple-icons": "^1.2.100",
+    "@nuxt/ui": "^4.12.0",
+    "@nuxtjs/robots": "^7.0.2",
+    "@nuxtjs/sitemap": "^9.1.0",
+    "nuxt": "^4.0.0",
+    "tailwindcss": "^4.3.3",
+    "vue": "^3.5.0",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "sharp": "^0.34.5",
+    "typescript": "^5.8.0",
+    "vue-tsc": "^3.0.0",
+    "wrangler": "^4.151.3"
+  }
+}

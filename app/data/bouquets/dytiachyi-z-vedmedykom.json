@@ -1,0 +1,15 @@
+{
+  "id": 7,
+  "title": "Дитячий букет з ведмедиком",
+  "date": "2026-01-28",
+  "price": 680,
+  "images": [],
+  "occasions": ["kids", "birthday"],
+  "recipients": ["child"],
+  "alcohol": null,
+  "shippable": true,
+  "size": "S",
+  "composition": ["М'який ведмедик", "Kinder", "Льодяники", "Кольорова обгортка"],
+  "featured": true,
+  "mock": true
+}

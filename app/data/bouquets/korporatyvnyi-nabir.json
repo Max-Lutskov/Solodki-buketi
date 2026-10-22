@@ -1,0 +1,15 @@
+{
+  "id": 9,
+  "title": "Великий букет для колективу",
+  "date": "2025-12-24",
+  "price": 3600,
+  "images": [],
+  "occasions": ["corporate"],
+  "recipients": ["colleagues"],
+  "alcohol": "Ігристе вино 0,75 л",
+  "shippable": false,
+  "size": "XL",
+  "composition": ["Ігристе вино 0,75 л", "Асорті цукерок", "Мандарини", "Новорічний декор"],
+  "featured": false,
+  "mock": true
+}

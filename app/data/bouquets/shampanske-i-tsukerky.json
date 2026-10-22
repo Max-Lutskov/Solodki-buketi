@@ -1,0 +1,15 @@
+{
+  "id": 3,
+  "title": "Букет із шампанським і цукерками",
+  "date": "2026-03-07",
+  "price": 1850,
+  "images": [],
+  "occasions": ["birthday", "wedding"],
+  "recipients": ["woman"],
+  "alcohol": "Шампанське 0,75 л",
+  "shippable": false,
+  "size": "L",
+  "composition": ["Шампанське 0,75 л", "Ferrero Rocher", "Цукерки «Шарм»", "Подарункова обгортка"],
+  "featured": true,
+  "mock": true
+}

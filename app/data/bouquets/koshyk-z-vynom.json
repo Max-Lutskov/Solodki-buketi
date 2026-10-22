@@ -1,0 +1,15 @@
+{
+  "id": 5,
+  "title": "Кошик з вином і солодощами",
+  "date": "2026-01-14",
+  "price": 2900,
+  "images": [],
+  "occasions": ["birthday", "corporate"],
+  "recipients": ["woman", "colleagues"],
+  "alcohol": "Вино 0,75 л",
+  "shippable": false,
+  "size": "XL",
+  "composition": ["Вино 0,75 л", "Ferrero Rocher", "Raffaello", "Шоколад", "Плетений кошик"],
+  "featured": true,
+  "mock": true
+}

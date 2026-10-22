@@ -1,0 +1,18 @@
+// Cloudflare Worker: пререндерені сторінки й фото віддаються як статичні файли, Worker обробляє лише /api/order.
+// Деплой: npm run deploy (збирає з пресетом cloudflare_module і викликає wrangler deploy)
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "solodki-buketi",
+  "main": ".output/server/index.mjs",
+  "compatibility_date": "2025-07-15",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": ".output/public",
+    "binding": "ASSETS"
+  },
+  // TODO: домен ще не обрано. Коли буде — додати routes з custom_domain і вимкнути workers.dev,
+  // щоб Google не бачив другу копію (як у sadovi-mrii):
+  // "routes": [{ "pattern": "<домен>", "custom_domain": true }],
+  // "workers_dev": false,
+  "observability": { "enabled": true }
+}

@@ -1,0 +1,10 @@
+// Переадресація www.<домен> → <домен> (301, шлях і параметри зберігаються).
+// Деплой: npx.cmd wrangler deploy -c redirect-www/wrangler.jsonc (потрібно лише при зміні цього Worker'а)
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "solodki-buketi-www",
+  "main": "index.js",
+  "compatibility_date": "2025-07-15",
+  // TODO: "routes": [{ "pattern": "www.<домен>", "custom_domain": true }],
+  "workers_dev": false
+}

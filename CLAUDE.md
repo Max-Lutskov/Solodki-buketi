@@ -38,4 +38,4 @@ SEO: `Florist` на всіх сторінках (`app.vue`), `Product`+`Offer` (
 ## Заявки й хостинг
 - `server/api/order.post.ts`: multipart, перевірка полів як у формі, honeypot `website`, Cloudflare Turnstile (якщо задано `NUXT_TURNSTILE_SECRET` / `NUXT_PUBLIC_TURNSTILE_SITE_KEY`), Telegram `sendMessage` + `sendMediaGroup` у кожен чат з `NUXT_TELEGRAM_CHAT_ID` (через кому). Без токена заявка пишеться в лог
 - Фото-референси стискаються в браузері до 1600 px (`compressImage` у `useOrder.ts`)
-- Хостинг: Cloudflare Worker `solodki-buketi` (`wrangler.jsonc`), деплой `npm run deploy`. Домену ще немає: коли буде — `routes` з `custom_domain`, `workers_dev: false`, домен у `redirect-www/`, `site.url` і `indexable` у `nuxt.config.ts`
+- Хостинг: Cloudflare Worker `solodki-buketi` (`wrangler.jsonc`), деплой вручну `npm run deploy` (автодеплою з GitHub немає). Поки що адреса https://solodki-buketi.makslutskov1.workers.dev (задеплоєно 23.10.2026, секрети Telegram задані через `wrangler secret`, Turnstile ще ні). Домену ще немає: коли буде — `routes` з `custom_domain`, `workers_dev: false`, домен у `redirect-www/`, `site.url` і `indexable` у `nuxt.config.ts`

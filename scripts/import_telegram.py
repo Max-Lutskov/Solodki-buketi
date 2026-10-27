@@ -1,7 +1,7 @@
 """
 Разовий імпорт букетів з Telegram (26.10.2026) у app/data/bouquets/*.json + фото для сайту.
 
-Бере вирізані фото з photos/final/ (process_images.py з --model birefnet-general-lite → retouch.py),
+Бере вирізані фото з photos/final/ (upscale.py → process_images.py з --model birefnet-general-lite → retouch.py),
 кладе на підкладку арки (--color-rose) у 3:4 і зберігає public/images/bouquets/<id>/<n>.jpg.
 Після нього: npm run images.
 
@@ -198,7 +198,8 @@ def main() -> None:
         images = []
         for i, f in enumerate(FILES.get(slug, index[mid]["files"]), start=1):
             if f[:-4] in RAW:
-                crop_raw(ROOT / "photos/telegram" / f, IMG / str(n) / f"{i}.jpg")
+                up = ROOT / "photos/telegram-up" / f.replace(".jpg", ".png")
+                crop_raw(up if up.exists() else ROOT / "photos/telegram" / f, IMG / str(n) / f"{i}.jpg")
             else:
                 compose(SRC / f.replace(".jpg", ".webp"), IMG / str(n) / f"{i}.jpg")
             images.append(f"{n}/{i}")

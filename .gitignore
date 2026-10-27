@@ -31,3 +31,4 @@ photos/
 
 # Python
 __pycache__/
+.claude/settings.local.json

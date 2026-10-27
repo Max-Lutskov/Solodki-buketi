@@ -80,6 +80,10 @@ const latest = (featured.length >= 4 ? featured : bouquets).slice(0, 8)
       <div class="mt-8 grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-4 lg:gap-x-6">
         <BouquetCard v-for="b in latest" :key="b.slug" :bouquet="b" />
       </div>
+      <!-- Після сітки, бо на телефоні кнопка вгорі вже далеко -->
+      <div class="mt-10 flex justify-center">
+        <UButton to="/roboty/" label="Дивитись усі роботи" size="lg" color="neutral" variant="outline" />
+      </div>
     </UContainer>
 
     <!-- Бюджет і привід ведуть у галерею з фільтром -->

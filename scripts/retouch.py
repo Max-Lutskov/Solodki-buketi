@@ -2,6 +2,7 @@
 Доводка вирізаних букетів після process_images.py, перед import_telegram.py.
 
 Основа — birefnet-general-lite (photos/redo/lite/transparent): чистіше за isnet на білій плівці.
+Якщо фото пройшло upscale.py, береться вирізане з апскейленого оригіналу (photos/redo/up*).
 Для окремих фото — правила нижче. Результат: photos/final/<name>.webp (прозорий фон).
 
   photos/.venv/Scripts/python scripts/retouch.py
@@ -15,12 +16,15 @@ from scipy import ndimage
 
 ROOT = Path(__file__).resolve().parent.parent
 LITE = ROOT / "photos/redo/lite/transparent"
+# Те саме, але з оригіналів після scripts/upscale.py (Real-ESRGAN 4x). Беремо, якщо фото є і там
+UP_LITE = ROOT / "photos/redo/up/transparent"
 ISNET = ROOT / "photos/telegram-out/transparent"
 OUT = ROOT / "photos/final"
 
 # Фото на чорному фоні process_images.py вирізає не моделлю, а за темним (black_key): з'їдає темну плівку
 # й заливає чорне між ручками. Для них прогнали lite примусово (has_black_background = False)
 LITE_ON_BLACK = ROOT / "photos/redo/black/out/transparent"
+UP_LITE_ON_BLACK = ROOT / "photos/redo/up-black/transparent"
 # А тут black_key кращий: темна підставка, ваза, рушник чи коробка — частина композиції, модель їх обрізає
 BLACK_KEY = {"2056448_1", "2056455_1", "2056455_2", "2056514_1", "2056519_1", "2056520_1"}
 # Де isnet вийшов краще за lite (lite відрізав вишиту корзинку; новорічні кульки ялинки lite лишив букетом)
@@ -32,6 +36,14 @@ HANDS = {"2056444_1", "2056449_1", "2056488_1", "2056513_1", "2056521_1", "20565
 
 def load(path: Path) -> np.ndarray:
     return np.array(Image.open(path).convert("RGBA"))
+
+
+def pick(base: Path, up: Path, name: str) -> np.ndarray:
+    return load(up / f"{name}.webp" if (up / f"{name}.webp").exists() else base / f"{name}.webp")
+
+
+def lite(name: str) -> np.ndarray:
+    return pick(LITE, UP_LITE, name)
 
 
 def keep_main(rgba: np.ndarray, min_share: float = 0.15) -> np.ndarray:
@@ -111,7 +123,8 @@ def crop_left(rgba: np.ndarray, share: float) -> np.ndarray:
 
 def white_key(name: str) -> np.ndarray:
     """Букет на білому: обидві моделі відрізають верх з батончиками. Фон — білі пікселі, зв'язані з краєм кадру."""
-    rgb = np.array(Image.open(ROOT / "photos/telegram" / f"{name}.jpg").convert("RGB"))
+    up = ROOT / "photos/telegram-up" / f"{name}.png"
+    rgb = np.array(Image.open(up if up.exists() else ROOT / "photos/telegram" / f"{name}.jpg").convert("RGB"))
     c = rgb.astype(np.int16)
     white = (c.min(axis=2) > 225) & (np.ptp(c, axis=2) < 25)
     labels, _ = ndimage.label(white)
@@ -142,13 +155,13 @@ def hide_watermark(rgba: np.ndarray) -> np.ndarray:
 
 SPECIAL = {
     "2056477_1": lambda: union_with_isnet("2056477_1"),
-    "2056570_1": lambda: drop_card_decor(load(LITE / "2056570_1.webp")),
-    "2056520_1": lambda: drop_thin_columns(load(LITE / "2056520_1.webp")),
-    "2056515_1": lambda: hide_watermark(load(LITE / "2056515_1.webp")),
+    "2056570_1": lambda: drop_card_decor(lite("2056570_1")),
+    "2056520_1": lambda: drop_thin_columns(lite("2056520_1")),
+    "2056515_1": lambda: hide_watermark(lite("2056515_1")),
     "2056562_1": lambda: white_key("2056562_1"),
-    "2056530_1": lambda: crop_left(load(LITE / "2056530_1.webp"), 0.38),
-    "2056531_1": lambda: crop_left(load(LITE / "2056531_1.webp"), 0.42),
-    "2056573_1": lambda: crop_left(load(LITE / "2056573_1.webp"), 0.40),
+    "2056530_1": lambda: crop_left(lite("2056530_1"), 0.38),
+    "2056531_1": lambda: crop_left(lite("2056531_1"), 0.42),
+    "2056573_1": lambda: crop_left(lite("2056573_1"), 0.40),
 }
 
 
@@ -161,9 +174,9 @@ def main() -> None:
         elif name in USE_ISNET:
             rgba = load(ISNET / path.name)
         elif (LITE_ON_BLACK / path.name).exists() and name not in BLACK_KEY:
-            rgba = load(LITE_ON_BLACK / path.name)
+            rgba = pick(LITE_ON_BLACK, UP_LITE_ON_BLACK, name)
         else:
-            rgba = load(LITE / path.name)
+            rgba = lite(name)
         Image.fromarray(rgba).save(OUT / path.name, "WEBP", lossless=True)
     print(f"Готово → {OUT}")
 

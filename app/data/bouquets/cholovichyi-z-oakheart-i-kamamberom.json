@@ -1,0 +1,27 @@
+{
+  "id": 72,
+  "title": "Чоловічий з Oakheart і камамбером",
+  "date": "2026-10-26",
+  "price": 2000,
+  "images": [
+    "72/1"
+  ],
+  "occasions": [
+    "man",
+    "birthday"
+  ],
+  "recipients": [
+    "man"
+  ],
+  "alcohol": "Ром Oakheart, пиво",
+  "shippable": false,
+  "size": "XL",
+  "composition": [
+    "Ром Oakheart",
+    "Пиво",
+    "Камамбер",
+    "Лимони",
+    "Ferrero Rocher"
+  ],
+  "featured": false
+}

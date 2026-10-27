@@ -1,0 +1,25 @@
+{
+  "id": 92,
+  "title": "Червона сумочка з шампанським",
+  "date": "2026-10-26",
+  "price": 750,
+  "images": [
+    "92/1"
+  ],
+  "occasions": [
+    "birthday",
+    "march8"
+  ],
+  "recipients": [
+    "woman"
+  ],
+  "alcohol": "Шампанське",
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Цукерки",
+    "Шампанське",
+    "Сумочка з ручками"
+  ],
+  "featured": false
+}

@@ -1,0 +1,27 @@
+{
+  "id": 75,
+  "title": "Цифра 1 з жирафом на машинці",
+  "date": "2026-10-26",
+  "price": 1800,
+  "images": [
+    "75/1",
+    "75/2"
+  ],
+  "occasions": [
+    "kids",
+    "birthday"
+  ],
+  "recipients": [
+    "child"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "XL",
+  "composition": [
+    "Ferrero Rocher",
+    "Дитячі пюре й соки",
+    "Іграшковий жираф",
+    "Іграшкова машинка"
+  ],
+  "featured": true
+}

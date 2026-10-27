@@ -1,0 +1,25 @@
+{
+  "id": 91,
+  "title": "Ковпак Діда Мороза",
+  "date": "2026-10-26",
+  "price": 400,
+  "images": [
+    "91/1"
+  ],
+  "occasions": [
+    "newyear",
+    "kids"
+  ],
+  "recipients": [
+    "child"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "S",
+  "composition": [
+    "Шоколадний Дід Мороз",
+    "Milka",
+    "Цукерки"
+  ],
+  "featured": false
+}

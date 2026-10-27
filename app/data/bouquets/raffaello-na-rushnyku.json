@@ -1,0 +1,25 @@
+{
+  "id": 73,
+  "title": "Raffaello на вишитому рушнику",
+  "date": "2026-10-26",
+  "price": 650,
+  "images": [
+    "73/1"
+  ],
+  "occasions": [
+    "birthday",
+    "wedding"
+  ],
+  "recipients": [
+    "woman",
+    "man"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Raffaello",
+    "Вишитий рушник"
+  ],
+  "featured": false
+}

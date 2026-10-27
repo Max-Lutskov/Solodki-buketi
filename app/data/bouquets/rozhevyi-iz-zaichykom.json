@@ -1,0 +1,25 @@
+{
+  "id": 89,
+  "title": "Рожевий букет із зайчиком",
+  "date": "2026-10-26",
+  "price": 2000,
+  "images": [
+    "89/1"
+  ],
+  "occasions": [
+    "kids",
+    "birthday"
+  ],
+  "recipients": [
+    "child"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "XL",
+  "composition": [
+    "Raffaello",
+    "Іграшковий зайчик",
+    "Цукерки"
+  ],
+  "featured": false
+}

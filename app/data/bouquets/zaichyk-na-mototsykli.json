@@ -1,0 +1,25 @@
+{
+  "id": 95,
+  "title": "Зайчик на мотоциклі з підгузків",
+  "date": "2026-10-26",
+  "price": 2500,
+  "images": [
+    "95/1",
+    "95/2"
+  ],
+  "occasions": [
+    "kids"
+  ],
+  "recipients": [
+    "child"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "XL",
+  "composition": [
+    "Підгузки",
+    "Іграшковий зайчик",
+    "Пляшечка для годування"
+  ],
+  "featured": true
+}

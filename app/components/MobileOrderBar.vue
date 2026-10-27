@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { messengerLinks, useCopyForMessenger } from '~/composables/useMessengers'
 
-// На сторінці форми кнопка «Замовити» нікуди не веде, тож там панелі немає
+// На сторінці форми кнопка «Замовити» нікуди не веде, а на /tsiny/ панель закривала б «Надіслати»
 const route = useRoute()
-const hidden = computed(() => route.path.startsWith('/zibraty-svij'))
+const hidden = computed(() => route.path.startsWith('/zibraty-svij') || route.path.startsWith('/tsiny'))
 const links = messengerLinks()
 const copy = useCopyForMessenger()
 </script>

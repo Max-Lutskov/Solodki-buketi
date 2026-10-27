@@ -1,0 +1,25 @@
+{
+  "id": 69,
+  "title": "Рожевий з Raffaello і «Шарм»",
+  "date": "2026-10-26",
+  "price": 1500,
+  "images": [
+    "69/1"
+  ],
+  "occasions": [
+    "birthday"
+  ],
+  "recipients": [
+    "woman"
+  ],
+  "alcohol": "Міцний алкоголь",
+  "shippable": false,
+  "size": "XL",
+  "composition": [
+    "Raffaello",
+    "Цукерки «Шарм»",
+    "Пляшка міцного",
+    "Топер «З днем народження»"
+  ],
+  "featured": false
+}

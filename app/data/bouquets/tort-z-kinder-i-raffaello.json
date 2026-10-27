@@ -1,0 +1,26 @@
+{
+  "id": 84,
+  "title": "Торт з Kinder і Raffaello",
+  "date": "2026-10-26",
+  "price": 650,
+  "images": [
+    "84/1"
+  ],
+  "occasions": [
+    "kids",
+    "birthday"
+  ],
+  "recipients": [
+    "child",
+    "woman"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Kinder",
+    "Kinder Surprise",
+    "Raffaello"
+  ],
+  "featured": false
+}

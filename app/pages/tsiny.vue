@@ -113,7 +113,10 @@ async function send() {
     <!-- Пастка для ботів: людина цього поля не бачить -->
     <input v-model="website" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="absolute -left-[9999px]">
 
-    <div class="fixed inset-x-0 bottom-0 z-10 border-t border-cocoa-200 bg-milk/95 backdrop-blur">
+    <div
+      class="fixed inset-x-0 bottom-0 z-40 border-t border-cocoa-200 bg-milk/95 backdrop-blur"
+      style="padding-bottom: env(safe-area-inset-bottom)"
+    >
       <UContainer class="flex flex-wrap items-center justify-between gap-3 py-3">
         <p class="text-sm" aria-live="polite">
           <span v-if="status === 'sent'" class="font-medium text-wine-700">Надіслано, дякую! Якщо щось виправите — надішліть ще раз.</span>

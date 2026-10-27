@@ -1,0 +1,29 @@
+{
+  "id": 78,
+  "title": "Milka в коробці з ведмедиком",
+  "date": "2026-10-26",
+  "price": 800,
+  "images": [
+    "78/1",
+    "78/2"
+  ],
+  "occasions": [
+    "kids",
+    "birthday"
+  ],
+  "recipients": [
+    "child",
+    "woman"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Milka",
+    "Цукерки",
+    "Декоративні троянди",
+    "Іграшковий ведмедик",
+    "Капелюшна коробка"
+  ],
+  "featured": false
+}

@@ -1,0 +1,26 @@
+{
+  "id": 64,
+  "title": "Букет із сухофруктів у жовто-зеленій плівці",
+  "date": "2026-10-26",
+  "price": 1000,
+  "images": [
+    "64/1"
+  ],
+  "occasions": [
+    "birthday",
+    "march8"
+  ],
+  "recipients": [
+    "woman",
+    "colleagues"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "L",
+  "composition": [
+    "Сухофрукти",
+    "Плівка й сітка",
+    "Атласні стрічки"
+  ],
+  "featured": false
+}

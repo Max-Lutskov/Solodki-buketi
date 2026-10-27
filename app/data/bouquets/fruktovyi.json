@@ -1,0 +1,26 @@
+{
+  "id": 66,
+  "title": "Фруктовий букет",
+  "date": "2026-10-26",
+  "price": 600,
+  "images": [
+    "66/1"
+  ],
+  "occasions": [
+    "birthday",
+    "march8"
+  ],
+  "recipients": [
+    "woman",
+    "colleagues"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Фрукти",
+    "Зелень",
+    "Атласні стрічки"
+  ],
+  "featured": false
+}

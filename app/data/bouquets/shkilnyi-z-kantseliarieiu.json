@@ -1,0 +1,25 @@
+{
+  "id": 76,
+  "title": "Шкільний букет з канцелярією",
+  "date": "2026-10-26",
+  "price": 1200,
+  "images": [
+    "76/1"
+  ],
+  "occasions": [
+    "kids",
+    "birthday"
+  ],
+  "recipients": [
+    "child"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "L",
+  "composition": [
+    "Зошити й альбом",
+    "Пластилін і ножиці",
+    "Шоколадні батончики"
+  ],
+  "featured": false
+}

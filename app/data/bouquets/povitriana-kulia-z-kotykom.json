@@ -1,0 +1,26 @@
+{
+  "id": 80,
+  "title": "Повітряна куля з котиком",
+  "date": "2026-10-26",
+  "price": 1600,
+  "images": [
+    "80/1"
+  ],
+  "occasions": [
+    "kids",
+    "birthday"
+  ],
+  "recipients": [
+    "child"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "XL",
+  "composition": [
+    "Kinder",
+    "M&M's",
+    "Кулька «З днем народження»",
+    "Іграшковий котик"
+  ],
+  "featured": true
+}

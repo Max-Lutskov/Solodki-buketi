@@ -1,0 +1,27 @@
+{
+  "id": 85,
+  "title": "«True love» з ведмедиком",
+  "date": "2026-10-26",
+  "price": 700,
+  "images": [
+    "85/1"
+  ],
+  "occasions": [
+    "birthday",
+    "valentine"
+  ],
+  "recipients": [
+    "child",
+    "woman"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Цукерки",
+    "Декоративні троянди",
+    "Іграшковий ведмедик",
+    "Коробка «True love»"
+  ],
+  "featured": false
+}

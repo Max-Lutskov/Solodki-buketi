@@ -1,0 +1,25 @@
+{
+  "id": 88,
+  "title": "Букет зі шкарпеток",
+  "date": "2026-10-26",
+  "price": 750,
+  "images": [
+    "88/1"
+  ],
+  "occasions": [
+    "kids",
+    "birthday"
+  ],
+  "recipients": [
+    "child",
+    "woman"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Шкарпетки",
+    "Льодяники"
+  ],
+  "featured": false
+}

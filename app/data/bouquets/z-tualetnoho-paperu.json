@@ -1,0 +1,26 @@
+{
+  "id": 67,
+  "title": "Букет з туалетного паперу",
+  "date": "2026-10-26",
+  "price": 600,
+  "images": [
+    "67/1"
+  ],
+  "occasions": [
+    "birthday"
+  ],
+  "recipients": [
+    "woman",
+    "man",
+    "colleagues"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Рулони туалетного паперу",
+    "Зелень",
+    "Зелена плівка"
+  ],
+  "featured": false
+}

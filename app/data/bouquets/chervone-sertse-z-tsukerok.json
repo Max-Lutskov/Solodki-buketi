@@ -1,0 +1,26 @@
+{
+  "id": 83,
+  "title": "Червоне серце з цукерок",
+  "date": "2026-10-26",
+  "price": 600,
+  "images": [
+    "83/1"
+  ],
+  "occasions": [
+    "birthday",
+    "march8",
+    "valentine"
+  ],
+  "recipients": [
+    "woman",
+    "child"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Цукерки",
+    "Червона й золота плівка"
+  ],
+  "featured": false
+}

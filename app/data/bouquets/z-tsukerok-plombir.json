@@ -1,0 +1,26 @@
+{
+  "id": 68,
+  "title": "Букет з цукерок «Пломбір»",
+  "date": "2026-10-26",
+  "price": 800,
+  "images": [
+    "68/1"
+  ],
+  "occasions": [
+    "birthday",
+    "march8"
+  ],
+  "recipients": [
+    "woman",
+    "teacher",
+    "colleagues"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Цукерки «Пломбір»",
+    "Плівка в горошок"
+  ],
+  "featured": false
+}

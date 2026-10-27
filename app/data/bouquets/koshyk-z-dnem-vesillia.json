@@ -1,0 +1,25 @@
+{
+  "id": 70,
+  "title": "Кошик «З днем весілля» з Martini",
+  "date": "2026-10-26",
+  "price": 1300,
+  "images": [
+    "70/1"
+  ],
+  "occasions": [
+    "wedding"
+  ],
+  "recipients": [
+    "woman"
+  ],
+  "alcohol": "Martini Asti",
+  "shippable": false,
+  "size": "L",
+  "composition": [
+    "Martini Asti",
+    "Raffaello",
+    "Плетений кошик",
+    "Топер «З днем весілля»"
+  ],
+  "featured": true
+}

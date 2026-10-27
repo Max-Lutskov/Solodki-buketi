@@ -1,0 +1,23 @@
+{
+  "id": 71,
+  "title": "Білий весільний букет",
+  "date": "2026-10-26",
+  "price": 1300,
+  "images": [
+    "71/1"
+  ],
+  "occasions": [
+    "wedding"
+  ],
+  "recipients": [
+    "woman"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "L",
+  "composition": [
+    "Цукерки в білій обгортці",
+    "Синя сітка"
+  ],
+  "featured": false
+}

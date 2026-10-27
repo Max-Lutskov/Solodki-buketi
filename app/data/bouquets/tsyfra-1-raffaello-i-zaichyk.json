@@ -1,0 +1,26 @@
+{
+  "id": 79,
+  "title": "Цифра 1 з Raffaello і зайчиком",
+  "date": "2026-10-26",
+  "price": 1500,
+  "images": [
+    "79/1"
+  ],
+  "occasions": [
+    "kids",
+    "birthday"
+  ],
+  "recipients": [
+    "child",
+    "woman"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "XL",
+  "composition": [
+    "Raffaello",
+    "Іграшковий зайчик",
+    "Цукерки"
+  ],
+  "featured": false
+}

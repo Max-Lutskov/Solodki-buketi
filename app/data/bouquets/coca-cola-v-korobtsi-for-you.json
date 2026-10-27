@@ -1,0 +1,27 @@
+{
+  "id": 86,
+  "title": "Coca-Cola і батончики в коробці «For you»",
+  "date": "2026-10-26",
+  "price": 500,
+  "images": [
+    "86/1"
+  ],
+  "occasions": [
+    "kids",
+    "birthday",
+    "man"
+  ],
+  "recipients": [
+    "child",
+    "man"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Coca-Cola",
+    "Горіхові батончики",
+    "Коробка «For you»"
+  ],
+  "featured": false
+}

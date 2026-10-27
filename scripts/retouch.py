@@ -23,8 +23,8 @@ OUT = ROOT / "photos/final"
 LITE_ON_BLACK = ROOT / "photos/redo/black/out/transparent"
 # А тут black_key кращий: темна підставка, ваза, рушник чи коробка — частина композиції, модель їх обрізає
 BLACK_KEY = {"2056448_1", "2056455_1", "2056455_2", "2056514_1", "2056519_1", "2056520_1"}
-# Де isnet вийшов краще за lite (lite відрізав вишиту корзинку)
-USE_ISNET = {"2056523_1"}
+# Де isnet вийшов краще за lite (lite відрізав вишиту корзинку; новорічні кульки ялинки lite лишив букетом)
+USE_ISNET = {"2056523_1", "2056574_1"}
 # Руки, що заходять у кадр з краю
 HANDS = {"2056444_1", "2056449_1", "2056488_1", "2056513_1", "2056521_1", "2056524_1", "2056546_1",
          "2056547_1", "2056548_1", "2056551_1", "2056552_1", "2056556_1", "2056576_1", "2056577_1"}
@@ -102,6 +102,25 @@ def drop_thin_columns(rgba: np.ndarray) -> np.ndarray:
     return keep_main(rgba)
 
 
+def crop_left(rgba: np.ndarray, share: float) -> np.ndarray:
+    """Тетяна тримає букет: лишаємо праву частину об'єкта, починаючи з частки share його ширини."""
+    xs = np.nonzero(rgba[:, :, 3] > 20)[1]
+    rgba[:, : int(xs.min() + (xs.max() - xs.min()) * share), 3] = 0
+    return keep_main(rgba)
+
+
+def white_key(name: str) -> np.ndarray:
+    """Букет на білому: обидві моделі відрізають верх з батончиками. Фон — білі пікселі, зв'язані з краєм кадру."""
+    rgb = np.array(Image.open(ROOT / "photos/telegram" / f"{name}.jpg").convert("RGB"))
+    c = rgb.astype(np.int16)
+    white = (c.min(axis=2) > 225) & (np.ptp(c, axis=2) < 25)
+    labels, _ = ndimage.label(white)
+    edge = np.setdiff1d(np.unique(np.concatenate([labels[0], labels[-1], labels[:, 0], labels[:, -1]])), [0])
+    fg = ndimage.binary_opening(~np.isin(labels, edge), iterations=2)
+    alpha = (ndimage.gaussian_filter(fg.astype(np.float32), 1.2) * 255).astype(np.uint8)
+    return keep_main(np.dstack([rgb, alpha]))
+
+
 def hide_watermark(rgba: np.ndarray) -> np.ndarray:
     """Білий напис TikTok внизу праворуч на темно-зеленій плівці: світлі пікселі → колір навколо."""
     h, w = rgba.shape[:2]
@@ -126,6 +145,10 @@ SPECIAL = {
     "2056570_1": lambda: drop_card_decor(load(LITE / "2056570_1.webp")),
     "2056520_1": lambda: drop_thin_columns(load(LITE / "2056520_1.webp")),
     "2056515_1": lambda: hide_watermark(load(LITE / "2056515_1.webp")),
+    "2056562_1": lambda: white_key("2056562_1"),
+    "2056530_1": lambda: crop_left(load(LITE / "2056530_1.webp"), 0.38),
+    "2056531_1": lambda: crop_left(load(LITE / "2056531_1.webp"), 0.42),
+    "2056573_1": lambda: crop_left(load(LITE / "2056573_1.webp"), 0.40),
 }
 
 

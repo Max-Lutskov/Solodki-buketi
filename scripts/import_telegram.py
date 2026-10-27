@@ -16,7 +16,7 @@ from PIL import Image, ImageFilter
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "photos/final"
 # Жодна модель не вирізає цілим (обрізаний кадром; коробка зливається з фоном) — поки ставимо оригінал. Потрібне нове фото
-RAW = {"2056477_1", "2056459_1"}
+RAW = {"2056477_1", "2056459_1", "2056491_1", "2056568_1"}
 DATA = ROOT / "app/data/bouquets"
 IMG = ROOT / "public/images/bouquets"
 DATE = "2026-10-26"
@@ -99,7 +99,58 @@ B = [
     (2056583, 550, "skrynka-z-dnem-narodzhennia", "Скринька «З днем народження»", "b", "W M K", None, ["Цукерки", "Дерев'яна скринька", "Топер «З днем народження»"], False),
     # У чаті було «700-800..?», ціну 800 підтвердили 27.10.2026. Додано в кінець, щоб не зсувати номери
     (2056437, 800, "chervonyi-z-raffaello", "Червоний букет з Raffaello", "b m v", "W", None, ["Raffaello", "Червона плівка й стрічки"], True),
+    # Ціни з /tsiny/ (27.10.2026). Назви й склад — за фото. Без ціни лишились 2056462 і 2056569
+    # Жіночі
+    (2056483, 1000, "z-sukhofruktiv-zhovto-zelenyi", "Букет із сухофруктів у жовто-зеленій плівці", "b m", "W K", None, ["Сухофрукти", "Плівка й сітка", "Атласні стрічки"], False),
+    (2056485, 800, "z-sukhofruktiv-fioletovyi", "Фіолетовий букет із сухофруктів", "b m", "W T K", None, ["Сухофрукти", "Фіолетова плівка"], False),
+    (2056491, 600, "fruktovyi", "Фруктовий букет", "b m", "W K", None, ["Фрукти", "Зелень", "Атласні стрічки"], False),
+    (2056506, 600, "z-tualetnoho-paperu", "Букет з туалетного паперу", "b", "W M K", None, ["Рулони туалетного паперу", "Зелень", "Зелена плівка"], False),
+    (2056507, 800, "z-tsukerok-plombir", "Букет з цукерок «Пломбір»", "b m", "W T K", None, ["Цукерки «Пломбір»", "Плівка в горошок"], False),
+    (2056508, 1500, "rozhevyi-z-raffaello-i-sharm", "Рожевий з Raffaello і «Шарм»", "b", "W", "Міцний алкоголь", ["Raffaello", "Цукерки «Шарм»", "Пляшка міцного", "Топер «З днем народження»"], False),
+    # Весільні: в одному повідомленні дві різні роботи, ціна одна на обидві
+    (2056509, 1300, "koshyk-z-dnem-vesillia", "Кошик «З днем весілля» з Martini", "w", "W", "Martini Asti", ["Martini Asti", "Raffaello", "Плетений кошик", "Топер «З днем весілля»"], True),
+    (2056509, 1300, "bilyi-vesilnyi", "Білий весільний букет", "w", "W", None, ["Цукерки в білій обгортці", "Синя сітка"], False),
+    # Чоловічі
+    (2056530, 2000, "cholovichyi-z-oakheart-i-kamamberom", "Чоловічий з Oakheart і камамбером", "man b", "M", "Ром Oakheart, пиво", ["Ром Oakheart", "Пиво", "Камамбер", "Лимони", "Ferrero Rocher"], False),
+    (2056531, 650, "raffaello-na-rushnyku", "Raffaello на вишитому рушнику", "b w", "W M", None, ["Raffaello", "Вишитий рушник"], False),
+    (2056532, 700, "pyvnyi-z-kronenbourg", "Пивний з Kronenbourg 1664", "man b", "M", "Пиво", ["Пиво Kronenbourg 1664", "Чипси", "Фісташки", "Топер «З днем народження»"], False),
+    # Дитячі
+    (2056535, 1800, "tsyfra-1-z-zhyrafom", "Цифра 1 з жирафом на машинці", "kids b", "C", None, ["Ferrero Rocher", "Дитячі пюре й соки", "Іграшковий жираф", "Іграшкова машинка"], True),
+    (2056537, 1200, "shkilnyi-z-kantseliarieiu", "Шкільний букет з канцелярією", "kids b", "C", None, ["Зошити й альбом", "Пластилін і ножиці", "Шоколадні батончики"], False),
+    (2056540, 700, "pepsi-coca-cola-i-snickers", "Pepsi, Coca-Cola і Snickers", "kids b", "C M", None, ["Pepsi", "Coca-Cola", "Snickers"], False),
+    (2056553, 800, "milka-z-vedmedykom", "Milka в коробці з ведмедиком", "kids b", "C W", None, ["Milka", "Цукерки", "Декоративні троянди", "Іграшковий ведмедик", "Капелюшна коробка"], False),
+    (2056559, 1500, "tsyfra-1-raffaello-i-zaichyk", "Цифра 1 з Raffaello і зайчиком", "kids b", "C W", None, ["Raffaello", "Іграшковий зайчик", "Цукерки"], False),
+    (2056560, 1600, "povitriana-kulia-z-kotykom", "Повітряна куля з котиком", "kids b", "C", None, ["Kinder", "M&M's", "Кулька «З днем народження»", "Іграшковий котик"], True),
+    (2056561, 350, "lovare-z-malynovoiu-troiandoiu", "Lovare з малиновою трояндою", "b m t", "W T C", None, ["Чай Lovare", "Цукерки", "Декоративна троянда"], False),
+    (2056562, 600, "tort-z-batonchykiv", "Торт із батончиків", "kids b man", "C M", None, ["Snickers", "Шоколадні батончики", "Цукерки"], False),
+    (2056563, 600, "chervone-sertse-z-tsukerok", "Червоне серце з цукерок", "b m v", "W C", None, ["Цукерки", "Червона й золота плівка"], False),
+    (2056564, 650, "tort-z-kinder-i-raffaello", "Торт з Kinder і Raffaello", "kids b", "C W", None, ["Kinder", "Kinder Surprise", "Raffaello"], False),
+    (2056565, 700, "true-love-z-vedmedykom", "«True love» з ведмедиком", "b v", "C W", None, ["Цукерки", "Декоративні троянди", "Іграшковий ведмедик", "Коробка «True love»"], False),
+    (2056566, 500, "coca-cola-v-korobtsi-for-you", "Coca-Cola і батончики в коробці «For you»", "kids b man", "C M", None, ["Coca-Cola", "Горіхові батончики", "Коробка «For you»"], False),
+    (2056567, 550, "love-z-rozhevym-vedmedykom", "«Love» з рожевим ведмедиком", "b v", "C W", None, ["Цукерки «Шарм»", "Декоративні троянди", "Іграшковий ведмедик", "Коробка «Love»"], False),
+    (2056568, 750, "zi-shkarpetok", "Букет зі шкарпеток", "kids b", "C W", None, ["Шкарпетки", "Льодяники"], False),
+    (2056573, 2000, "rozhevyi-iz-zaichykom", "Рожевий букет із зайчиком", "kids b", "C", None, ["Raffaello", "Іграшковий зайчик", "Цукерки"], False),
+    # Дві різні новорічні роботи, ціна одна
+    (2056574, 400, "novorichni-sanchata", "Новорічні санчата з пряниками", "ny kids", "C", None, ["Шоколадний Дід Мороз", "Kinder Surprise", "Пряники", "Льодяники"], False),
+    (2056574, 400, "kovpak-dida-moroza", "Ковпак Діда Мороза", "ny kids", "C", None, ["Шоколадний Дід Мороз", "Milka", "Цукерки"], False),
+    # До жіночих: три різні сумочки, ціна одна
+    (2056578, 750, "chervona-sumochka-z-shampanskym", "Червона сумочка з шампанським", "b m", "W", "Шампанське", ["Цукерки", "Шампанське", "Сумочка з ручками"], False),
+    (2056578, 750, "synio-zhovta-sumochka", "Синьо-жовта сумочка", "b m", "W T", None, ["Цукерки", "Сумочка з ручками"], False),
+    (2056578, 750, "fioletova-sumochka", "Фіолетова сумочка", "b m", "W", "Міцний алкоголь", ["Цукерки", "Пляшка міцного", "Декоративні троянди", "Сумочка з ручками"], False),
+    (2056584, 2500, "zaichyk-na-mototsykli", "Зайчик на мотоциклі з підгузків", "kids", "C", None, ["Підгузки", "Іграшковий зайчик", "Пляшечка для годування"], True),
 ]
+
+# Фото повідомлення, якщо в ньому кілька робіт або кадр з Тетяною замість букета
+FILES = {
+    "z-sukhofruktiv-zhovto-zelenyi": ["2056483_2.jpg"],
+    "koshyk-z-dnem-vesillia": ["2056509_1.jpg"],
+    "bilyi-vesilnyi": ["2056509_2.jpg"],
+    "novorichni-sanchata": ["2056574_1.jpg"],
+    "kovpak-dida-moroza": ["2056574_2.jpg"],
+    "chervona-sumochka-z-shampanskym": ["2056578_1.jpg"],
+    "synio-zhovta-sumochka": ["2056578_2.jpg"],
+    "fioletova-sumochka": ["2056578_3.jpg"],
+}
 
 # Букет в арці на першому екрані головної
 HERO = 2056437
@@ -145,7 +196,7 @@ def main() -> None:
         assert slug not in slugs, slug
         slugs.add(slug)
         images = []
-        for i, f in enumerate(index[mid]["files"], start=1):
+        for i, f in enumerate(FILES.get(slug, index[mid]["files"]), start=1):
             if f[:-4] in RAW:
                 crop_raw(ROOT / "photos/telegram" / f, IMG / str(n) / f"{i}.jpg")
             else:

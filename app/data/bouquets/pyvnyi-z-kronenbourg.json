@@ -1,0 +1,26 @@
+{
+  "id": 74,
+  "title": "Пивний з Kronenbourg 1664",
+  "date": "2026-10-26",
+  "price": 700,
+  "images": [
+    "74/1"
+  ],
+  "occasions": [
+    "man",
+    "birthday"
+  ],
+  "recipients": [
+    "man"
+  ],
+  "alcohol": "Пиво",
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Пиво Kronenbourg 1664",
+    "Чипси",
+    "Фісташки",
+    "Топер «З днем народження»"
+  ],
+  "featured": false
+}

@@ -1,0 +1,26 @@
+{
+  "id": 90,
+  "title": "Новорічні санчата з пряниками",
+  "date": "2026-10-26",
+  "price": 400,
+  "images": [
+    "90/1"
+  ],
+  "occasions": [
+    "newyear",
+    "kids"
+  ],
+  "recipients": [
+    "child"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "S",
+  "composition": [
+    "Шоколадний Дід Мороз",
+    "Kinder Surprise",
+    "Пряники",
+    "Льодяники"
+  ],
+  "featured": false
+}

@@ -1,0 +1,26 @@
+{
+  "id": 65,
+  "title": "Фіолетовий букет із сухофруктів",
+  "date": "2026-10-26",
+  "price": 800,
+  "images": [
+    "65/1"
+  ],
+  "occasions": [
+    "birthday",
+    "march8"
+  ],
+  "recipients": [
+    "woman",
+    "teacher",
+    "colleagues"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Сухофрукти",
+    "Фіолетова плівка"
+  ],
+  "featured": false
+}

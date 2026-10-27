@@ -1,0 +1,26 @@
+{
+  "id": 94,
+  "title": "Фіолетова сумочка",
+  "date": "2026-10-26",
+  "price": 750,
+  "images": [
+    "94/1"
+  ],
+  "occasions": [
+    "birthday",
+    "march8"
+  ],
+  "recipients": [
+    "woman"
+  ],
+  "alcohol": "Міцний алкоголь",
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Цукерки",
+    "Пляшка міцного",
+    "Декоративні троянди",
+    "Сумочка з ручками"
+  ],
+  "featured": false
+}

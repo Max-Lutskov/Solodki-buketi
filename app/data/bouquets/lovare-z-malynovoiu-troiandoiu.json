@@ -1,0 +1,28 @@
+{
+  "id": 81,
+  "title": "Lovare з малиновою трояндою",
+  "date": "2026-10-26",
+  "price": 350,
+  "images": [
+    "81/1"
+  ],
+  "occasions": [
+    "birthday",
+    "march8",
+    "teacher"
+  ],
+  "recipients": [
+    "woman",
+    "teacher",
+    "child"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "S",
+  "composition": [
+    "Чай Lovare",
+    "Цукерки",
+    "Декоративна троянда"
+  ],
+  "featured": false
+}

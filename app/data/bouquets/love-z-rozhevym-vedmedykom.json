@@ -1,0 +1,27 @@
+{
+  "id": 87,
+  "title": "«Love» з рожевим ведмедиком",
+  "date": "2026-10-26",
+  "price": 550,
+  "images": [
+    "87/1"
+  ],
+  "occasions": [
+    "birthday",
+    "valentine"
+  ],
+  "recipients": [
+    "child",
+    "woman"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Цукерки «Шарм»",
+    "Декоративні троянди",
+    "Іграшковий ведмедик",
+    "Коробка «Love»"
+  ],
+  "featured": false
+}

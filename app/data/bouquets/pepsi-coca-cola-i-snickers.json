@@ -1,0 +1,26 @@
+{
+  "id": 77,
+  "title": "Pepsi, Coca-Cola і Snickers",
+  "date": "2026-10-26",
+  "price": 700,
+  "images": [
+    "77/1"
+  ],
+  "occasions": [
+    "kids",
+    "birthday"
+  ],
+  "recipients": [
+    "child",
+    "man"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Pepsi",
+    "Coca-Cola",
+    "Snickers"
+  ],
+  "featured": false
+}

@@ -1,0 +1,25 @@
+{
+  "id": 93,
+  "title": "Синьо-жовта сумочка",
+  "date": "2026-10-26",
+  "price": 750,
+  "images": [
+    "93/1"
+  ],
+  "occasions": [
+    "birthday",
+    "march8"
+  ],
+  "recipients": [
+    "woman",
+    "teacher"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Цукерки",
+    "Сумочка з ручками"
+  ],
+  "featured": false
+}

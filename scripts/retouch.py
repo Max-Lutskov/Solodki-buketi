@@ -79,10 +79,18 @@ def union_with_isnet(name: str) -> np.ndarray:
     return keep_main(out)
 
 
-def drop_green(rgba: np.ndarray) -> np.ndarray:
+def drop_card_decor(rgba: np.ndarray) -> np.ndarray:
+    """Фото на листівці з Photoroom: зелені листки й золота рамка-дуга — це фон, не ручка кошика.
+    Кольором дугу не відділити (золоті обгортки цукерок такі самі), тож за формою:
+    відкриття стирає тонку лінію, а щільний букет лишається"""
     r, g, b = (rgba[:, :, i].astype(np.int16) for i in range(3))
     green = (g > r + 10) & (g > b)
     rgba[:, :, 3][ndimage.binary_dilation(green, iterations=2)] = 0
+    mask = rgba[:, :, 3] > 20
+    body = ndimage.binary_opening(mask, iterations=14)  # дуга ~24 px завширшки
+    # Повертаємо краї букета, які відкриття трохи з'їло
+    body = ndimage.binary_dilation(body, iterations=3) & mask
+    rgba[:, :, 3] = np.where(body, rgba[:, :, 3], 0)
     return keep_main(rgba)
 
 
@@ -115,7 +123,7 @@ def hide_watermark(rgba: np.ndarray) -> np.ndarray:
 
 SPECIAL = {
     "2056477_1": lambda: union_with_isnet("2056477_1"),
-    "2056570_1": lambda: drop_green(load(LITE / "2056570_1.webp")),
+    "2056570_1": lambda: drop_card_decor(load(LITE / "2056570_1.webp")),
     "2056520_1": lambda: drop_thin_columns(load(LITE / "2056520_1.webp")),
     "2056515_1": lambda: hide_watermark(load(LITE / "2056515_1.webp")),
 }

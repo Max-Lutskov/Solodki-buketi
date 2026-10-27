@@ -74,6 +74,33 @@ const list = computed(() => {
 
 const PAGE = 12
 const shown = ref(PAGE)
+
+// «Показати ще» переживає перехід на букет і назад: скільки показано — у sessionStorage для кожної адреси
+// з фільтрами. Без цього список знову з 12 карток і браузеру нікуди повернути прокрутку
+const SHOWN_KEY = 'roboty-shown'
+function readShown(): Record<string, number> {
+  try {
+    return JSON.parse(sessionStorage.getItem(SHOWN_KEY) ?? '{}')
+  } catch {
+    return {}
+  }
+}
+watch(shown, (n) => {
+  try {
+    sessionStorage.setItem(SHOWN_KEY, JSON.stringify({ ...readShown(), [route.fullPath]: n }))
+  } catch {}
+})
+onMounted(async () => {
+  // scroll у history.state Vue Router записує лише туди, звідки пішли далі, тобто це повернення «назад»
+  const scroll = (history.state as { scroll?: { top: number } } | null)?.scroll
+  const saved = readShown()[route.fullPath]
+  if (!scroll || !saved) return
+  shown.value = saved
+  await nextTick()
+  // instant: на html стоїть scroll-behavior: smooth, а повернення має бути одразу на місці
+  window.scrollTo({ top: scroll.top, behavior: 'instant' })
+})
+
 const anyFilter = computed(() => Object.values(filters).some(v => v.length))
 
 const groups = [

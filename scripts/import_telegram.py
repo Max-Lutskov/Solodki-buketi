@@ -88,7 +88,7 @@ B = [
     (2056551, 350, "rozhevyi-z-tsukerkamy", "Рожевий з цукерками", "kids b", "C", None, ["Цукерки"], False),
     (2056552, 350, "korobochka-sweet", "Коробочка «Sweet»", "b m", "C W T", None, ["Цукерки «Шарм»", "Декоративна троянда", "Коробочка"], False),
     (2056556, 500, "chervono-chornyi-z-tsukerkamy", "Червоно-чорний з цукерками", "b", "C W", None, ["Цукерки", "Декоративні троянди"], False),
-    (2056570, 350, "pomaranchevyi-koshyk", "Помаранчевий кошик", "kids b", "C", None, ["Цукерки", "Кошик"], False),
+    (2056570, 350, "pomaranchevyi-buket", "Помаранчевий букет", "kids b", "C", None, ["Цукерки", "Помаранчева плівка в горошок"], False),
     (2056571, 400, "sharm-u-korobtsi-love", "«Шарм» у коробці «Love»", "b m", "C W", None, ["Цукерки «Шарм»", "Декоративні троянди", "Коробка"], False),
     (2056572, 450, "raffaello-v-rozhevii-korobtsi", "Raffaello в рожевій коробці", "b m", "C W", None, ["Raffaello", "Декоративні троянди", "Коробка"], False),
     (2056576, 200, "z-vedmedykamy", "З ведмедиками", "kids v", "C W", None, ["Іграшкові ведмедики", "Декоративні троянди", "Цукерки"], False),

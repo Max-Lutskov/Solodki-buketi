@@ -1,0 +1,27 @@
+{
+  "id": 33,
+  "title": "Чоловічий букет з горілкою",
+  "date": "2026-10-26",
+  "price": 850,
+  "images": [
+    "33/1"
+  ],
+  "occasions": [
+    "man",
+    "birthday"
+  ],
+  "recipients": [
+    "man"
+  ],
+  "alcohol": "Горілка",
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Горілка",
+    "Лимони",
+    "Сир",
+    "Оливки",
+    "Снеки"
+  ],
+  "featured": false
+}

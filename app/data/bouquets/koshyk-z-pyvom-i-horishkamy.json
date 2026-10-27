@@ -1,0 +1,26 @@
+{
+  "id": 42,
+  "title": "Кошик з пивом і горішками",
+  "date": "2026-10-26",
+  "price": 1500,
+  "images": [
+    "42/1"
+  ],
+  "occasions": [
+    "man",
+    "birthday"
+  ],
+  "recipients": [
+    "man",
+    "colleagues"
+  ],
+  "alcohol": "Пиво",
+  "shippable": false,
+  "size": "XL",
+  "composition": [
+    "Пиво",
+    "Горішки",
+    "Снеки до пива"
+  ],
+  "featured": false
+}

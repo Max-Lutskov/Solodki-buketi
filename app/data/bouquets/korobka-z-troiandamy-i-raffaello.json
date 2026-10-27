@@ -1,0 +1,26 @@
+{
+  "id": 17,
+  "title": "Коробка з трояндами й Raffaello",
+  "date": "2026-10-26",
+  "price": 500,
+  "images": [
+    "17/1"
+  ],
+  "occasions": [
+    "birthday",
+    "march8",
+    "valentine"
+  ],
+  "recipients": [
+    "woman"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Raffaello",
+    "Декоративні троянди",
+    "Коробка"
+  ],
+  "featured": false
+}

@@ -1,0 +1,25 @@
+{
+  "id": 45,
+  "title": "Рожевий з шоколадкою",
+  "date": "2026-10-26",
+  "price": 350,
+  "images": [
+    "45/1"
+  ],
+  "occasions": [
+    "birthday",
+    "march8"
+  ],
+  "recipients": [
+    "child",
+    "woman"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "S",
+  "composition": [
+    "Шоколад",
+    "Декоративні троянди"
+  ],
+  "featured": false
+}

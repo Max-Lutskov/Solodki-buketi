@@ -1,0 +1,26 @@
+{
+  "id": 51,
+  "title": "Milka і Picnic",
+  "date": "2026-10-26",
+  "price": 600,
+  "images": [
+    "51/1"
+  ],
+  "occasions": [
+    "kids",
+    "birthday"
+  ],
+  "recipients": [
+    "child",
+    "woman"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Milka",
+    "Picnic",
+    "Шоколадні цукерки"
+  ],
+  "featured": false
+}

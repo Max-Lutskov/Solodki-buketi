@@ -1,0 +1,27 @@
+{
+  "id": 41,
+  "title": "Букет з Red Label",
+  "date": "2026-10-26",
+  "price": 1400,
+  "images": [
+    "41/1"
+  ],
+  "occasions": [
+    "man",
+    "birthday",
+    "wedding"
+  ],
+  "recipients": [
+    "man"
+  ],
+  "alcohol": "Віскі Johnnie Walker Red Label",
+  "shippable": false,
+  "size": "L",
+  "composition": [
+    "Віскі Red Label",
+    "Камамбер",
+    "Лимони",
+    "Ferrero Rocher"
+  ],
+  "featured": true
+}

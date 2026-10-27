@@ -1,0 +1,27 @@
+{
+  "id": 10,
+  "title": "Серце з Raffaello і трояндами",
+  "date": "2026-10-26",
+  "price": 900,
+  "images": [
+    "10/1",
+    "10/2"
+  ],
+  "occasions": [
+    "birthday",
+    "march8",
+    "valentine"
+  ],
+  "recipients": [
+    "woman"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "L",
+  "composition": [
+    "Raffaello",
+    "Декоративні троянди",
+    "Коробка-серце"
+  ],
+  "featured": true
+}

@@ -1,0 +1,26 @@
+{
+  "id": 57,
+  "title": "Raffaello в рожевій коробці",
+  "date": "2026-10-26",
+  "price": 450,
+  "images": [
+    "57/1"
+  ],
+  "occasions": [
+    "birthday",
+    "march8"
+  ],
+  "recipients": [
+    "child",
+    "woman"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "S",
+  "composition": [
+    "Raffaello",
+    "Декоративні троянди",
+    "Коробка"
+  ],
+  "featured": false
+}

@@ -1,0 +1,24 @@
+{
+  "id": 2,
+  "title": "«З днем народження» з білими трояндами",
+  "date": "2026-10-26",
+  "price": 650,
+  "images": [
+    "2/1"
+  ],
+  "occasions": [
+    "birthday"
+  ],
+  "recipients": [
+    "woman"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Цукерки",
+    "Декоративні троянди",
+    "Топер «З днем народження»"
+  ],
+  "featured": false
+}

@@ -1,0 +1,25 @@
+{
+  "id": 22,
+  "title": "Букет смаколиків у зеленій плівці",
+  "date": "2026-10-26",
+  "price": 1500,
+  "images": [
+    "22/1"
+  ],
+  "occasions": [
+    "birthday"
+  ],
+  "recipients": [
+    "woman",
+    "man"
+  ],
+  "alcohol": "Мініатюрні пляшечки",
+  "shippable": false,
+  "size": "XL",
+  "composition": [
+    "Ferrero Rocher",
+    "Снеки",
+    "Мініатюрні пляшечки"
+  ],
+  "featured": false
+}

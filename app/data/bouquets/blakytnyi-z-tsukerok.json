@@ -1,0 +1,25 @@
+{
+  "id": 21,
+  "title": "Блакитний букет з цукерок",
+  "date": "2026-10-26",
+  "price": 450,
+  "images": [
+    "21/1"
+  ],
+  "occasions": [
+    "birthday"
+  ],
+  "recipients": [
+    "woman",
+    "teacher",
+    "colleagues"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "S",
+  "composition": [
+    "Цукерки",
+    "Блакитна плівка"
+  ],
+  "featured": false
+}

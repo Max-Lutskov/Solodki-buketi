@@ -1,0 +1,26 @@
+{
+  "id": 56,
+  "title": "«Шарм» у коробці «Love»",
+  "date": "2026-10-26",
+  "price": 400,
+  "images": [
+    "56/1"
+  ],
+  "occasions": [
+    "birthday",
+    "march8"
+  ],
+  "recipients": [
+    "child",
+    "woman"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "S",
+  "composition": [
+    "Цукерки «Шарм»",
+    "Декоративні троянди",
+    "Коробка"
+  ],
+  "featured": false
+}

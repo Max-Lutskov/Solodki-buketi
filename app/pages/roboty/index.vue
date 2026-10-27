@@ -11,60 +11,70 @@ const siteUrl = useSiteConfig().url.replace(/\/$/, '')
 useJsonLd(() => [breadcrumbSchema(siteUrl, [{ name: 'Роботи', path: '/roboty/' }])])
 
 type Sort = 'new' | 'cheap' | 'expensive'
-interface Filters {
-  budget: string | null
-  pryvid: string | null
-  komu: string | null
-  alkohol: 'tak' | 'ni' | null
-  sort: Sort
-}
+type Group = 'budget' | 'pryvid' | 'komu' | 'alkohol'
 
-const empty = (): Filters => ({ budget: null, pryvid: null, komu: null, alkohol: null, sort: 'new' })
-const filters = reactive<Filters>(empty())
+// У кожній групі можна обрати кілька значень: усередині групи «або», між групами «і».
+// Букет, що підходить під два обрані приводи, показується один раз
+const filters = reactive<Record<Group, string[]>>({ budget: [], pryvid: [], komu: [], alkohol: [] })
+const sort = ref<Sort>('new')
 
-// Фільтри живуть в адресі (?budget=…&pryvid=…), щоб посиланням на добірку можна було поділитися.
+// Фільтри живуть в адресі (?pryvid=birthday,march8&komu=…), щоб посиланням на добірку можна було поділитися.
 // Сторінка пререндерена без параметрів, тож читаємо їх лише в браузері, інакше розмітка не збіжиться
 const route = useRoute()
 const router = useRouter()
 function fromQuery() {
   const q = route.query
-  const one = (v: unknown, allowed: string[]) => (typeof v === 'string' && allowed.includes(v) ? v : null)
+  const many = (v: unknown, allowed: string[]) =>
+    typeof v === 'string' ? [...new Set(v.split(','))].filter(x => allowed.includes(x)) : []
   Object.assign(filters, {
-    budget: one(q.budget, budgetRanges.map(r => r.slug)),
-    pryvid: one(q.pryvid, occasions.map(o => o.slug)),
-    komu: one(q.komu, recipients.map(r => r.slug)),
-    alkohol: one(q.alkohol, ['tak', 'ni']),
-    sort: one(q.sort, ['cheap', 'expensive']) ?? 'new'
+    budget: many(q.budget, budgetRanges.map(r => r.slug)),
+    pryvid: many(q.pryvid, occasions.map(o => o.slug)),
+    komu: many(q.komu, recipients.map(r => r.slug)),
+    alkohol: many(q.alkohol, ['tak', 'ni'])
   })
+  sort.value = typeof q.sort === 'string' && ['cheap', 'expensive'].includes(q.sort) ? q.sort as Sort : 'new'
 }
 onMounted(fromQuery)
 watch(() => route.query, fromQuery)
 
-function set<K extends keyof Filters>(key: K, value: Filters[K]) {
-  filters[key] = filters[key] === value && key !== 'sort' ? null as Filters[K] : value
+function pushQuery() {
   const query: Record<string, string> = {}
   for (const [k, v] of Object.entries(filters)) {
-    if (v && !(k === 'sort' && v === 'new')) query[k] = v
+    if (v.length) query[k] = v.join(',')
   }
+  if (sort.value !== 'new') query.sort = sort.value
   router.replace({ query })
   shown.value = PAGE
 }
 
+function toggle(key: Group, value: string) {
+  const v = filters[key]
+  filters[key] = v.includes(value) ? v.filter(x => x !== value) : [...v, value]
+  pushQuery()
+}
+
+function setSort(value: Sort) {
+  sort.value = value
+  pushQuery()
+}
+
+const any = (selected: string[], has: (x: string) => boolean) => !selected.length || selected.some(has)
+
 const list = computed(() => {
   const out = bouquets.filter(b =>
-    (!filters.budget || budgetOf(b.price)?.slug === filters.budget)
-    && (!filters.pryvid || b.occasions.includes(filters.pryvid))
-    && (!filters.komu || b.recipients.includes(filters.komu))
-    && (!filters.alkohol || (filters.alkohol === 'tak') === !!b.alcohol)
+    any(filters.budget, x => budgetOf(b.price)?.slug === x)
+    && any(filters.pryvid, x => b.occasions.includes(x))
+    && any(filters.komu, x => b.recipients.includes(x))
+    && any(filters.alkohol, x => (x === 'tak') === !!b.alcohol)
   )
-  if (filters.sort === 'cheap') return [...out].sort((a, b) => a.price - b.price)
-  if (filters.sort === 'expensive') return [...out].sort((a, b) => b.price - a.price)
+  if (sort.value === 'cheap') return [...out].sort((a, b) => a.price - b.price)
+  if (sort.value === 'expensive') return [...out].sort((a, b) => b.price - a.price)
   return out
 })
 
 const PAGE = 12
 const shown = ref(PAGE)
-const anyFilter = computed(() => !!(filters.budget || filters.pryvid || filters.komu || filters.alkohol))
+const anyFilter = computed(() => Object.values(filters).some(v => v.length))
 
 const groups = [
   { key: 'budget', title: 'Бюджет', options: budgetRanges.map(r => ({ value: r.slug, label: r.label })) },
@@ -96,10 +106,10 @@ const sorts: { value: Sort, label: string }[] = [
           v-for="o in g.options"
           :key="o.value"
           type="button"
-          :aria-pressed="filters[g.key] === o.value"
+          :aria-pressed="filters[g.key].includes(o.value)"
           class="rounded-full border px-3.5 py-1.5 text-sm font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wine-700"
-          :class="filters[g.key] === o.value ? 'border-wine-700 bg-wine-700 text-white' : 'border-cocoa-200 bg-white hover:border-wine-400'"
-          @click="set(g.key, o.value as never)"
+          :class="filters[g.key].includes(o.value) ? 'border-wine-700 bg-wine-700 text-white' : 'border-cocoa-200 bg-white hover:border-wine-400'"
+          @click="toggle(g.key, o.value)"
         >
           {{ o.label }}
         </button>
@@ -118,10 +128,10 @@ const sorts: { value: Sort, label: string }[] = [
           v-for="s in sorts"
           :key="s.value"
           type="button"
-          :aria-pressed="filters.sort === s.value"
+          :aria-pressed="sort === s.value"
           class="rounded-full px-3 py-1.5 text-sm"
-          :class="filters.sort === s.value ? 'bg-cocoa-900 text-white' : 'text-cocoa-700 hover:bg-cocoa-100'"
-          @click="set('sort', s.value)"
+          :class="sort === s.value ? 'bg-cocoa-900 text-white' : 'text-cocoa-700 hover:bg-cocoa-100'"
+          @click="setSort(s.value)"
         >
           {{ s.label }}
         </button>

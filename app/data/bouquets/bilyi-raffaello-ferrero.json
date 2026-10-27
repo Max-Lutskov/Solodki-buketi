@@ -1,0 +1,26 @@
+{
+  "id": 13,
+  "title": "Білий букет з Raffaello і Ferrero",
+  "date": "2026-10-26",
+  "price": 1000,
+  "images": [
+    "13/1",
+    "13/2"
+  ],
+  "occasions": [
+    "birthday",
+    "march8",
+    "wedding"
+  ],
+  "recipients": [
+    "woman"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "L",
+  "composition": [
+    "Raffaello",
+    "Ferrero Rocher"
+  ],
+  "featured": false
+}

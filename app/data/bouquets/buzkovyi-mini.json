@@ -1,0 +1,26 @@
+{
+  "id": 4,
+  "title": "Невеликий бузковий букет",
+  "date": "2026-10-26",
+  "price": 350,
+  "images": [
+    "4/1"
+  ],
+  "occasions": [
+    "birthday",
+    "march8"
+  ],
+  "recipients": [
+    "woman",
+    "teacher",
+    "colleagues"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "S",
+  "composition": [
+    "Цукерки",
+    "Бузкова плівка"
+  ],
+  "featured": false
+}

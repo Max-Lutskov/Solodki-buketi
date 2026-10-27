@@ -1,0 +1,26 @@
+{
+  "id": 36,
+  "title": "Коробка з сирами",
+  "date": "2026-10-26",
+  "price": 800,
+  "images": [
+    "36/1"
+  ],
+  "occasions": [
+    "man",
+    "birthday"
+  ],
+  "recipients": [
+    "man"
+  ],
+  "alcohol": "Міцний алкоголь",
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Пляшка міцного",
+    "Брі й камамбер",
+    "Апельсини",
+    "Ferrero Rocher"
+  ],
+  "featured": false
+}

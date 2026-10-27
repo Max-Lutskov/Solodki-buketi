@@ -1,0 +1,24 @@
+{
+  "id": 55,
+  "title": "Помаранчевий кошик",
+  "date": "2026-10-26",
+  "price": 350,
+  "images": [
+    "55/1"
+  ],
+  "occasions": [
+    "kids",
+    "birthday"
+  ],
+  "recipients": [
+    "child"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "S",
+  "composition": [
+    "Цукерки",
+    "Кошик"
+  ],
+  "featured": false
+}

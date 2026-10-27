@@ -1,0 +1,25 @@
+{
+  "id": 40,
+  "title": "«З днем народження» пивний",
+  "date": "2026-10-26",
+  "price": 800,
+  "images": [
+    "40/1"
+  ],
+  "occasions": [
+    "man",
+    "birthday"
+  ],
+  "recipients": [
+    "man"
+  ],
+  "alcohol": "Пиво",
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Пиво",
+    "Чипси й снеки",
+    "Топер «З днем народження»"
+  ],
+  "featured": false
+}

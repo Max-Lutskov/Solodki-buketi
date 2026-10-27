@@ -1,0 +1,26 @@
+{
+  "id": 58,
+  "title": "З ведмедиками",
+  "date": "2026-10-26",
+  "price": 200,
+  "images": [
+    "58/1"
+  ],
+  "occasions": [
+    "kids",
+    "valentine"
+  ],
+  "recipients": [
+    "child",
+    "woman"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "S",
+  "composition": [
+    "Іграшкові ведмедики",
+    "Декоративні троянди",
+    "Цукерки"
+  ],
+  "featured": false
+}

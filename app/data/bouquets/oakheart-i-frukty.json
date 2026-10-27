@@ -1,0 +1,25 @@
+{
+  "id": 35,
+  "title": "Oakheart з фруктами",
+  "date": "2026-10-26",
+  "price": 1200,
+  "images": [
+    "35/1"
+  ],
+  "occasions": [
+    "man",
+    "birthday"
+  ],
+  "recipients": [
+    "man"
+  ],
+  "alcohol": "Ром Oakheart",
+  "shippable": false,
+  "size": "L",
+  "composition": [
+    "Ром Oakheart",
+    "Фрукти",
+    "Снеки"
+  ],
+  "featured": false
+}

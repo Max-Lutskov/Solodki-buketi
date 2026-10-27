@@ -1,0 +1,26 @@
+{
+  "id": 62,
+  "title": "Скринька «З днем народження»",
+  "date": "2026-10-26",
+  "price": 550,
+  "images": [
+    "62/1"
+  ],
+  "occasions": [
+    "birthday"
+  ],
+  "recipients": [
+    "woman",
+    "man",
+    "colleagues"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Цукерки",
+    "Дерев'яна скринька",
+    "Топер «З днем народження»"
+  ],
+  "featured": false
+}

@@ -1,0 +1,26 @@
+{
+  "id": 60,
+  "title": "Сумочка з плетеним зайчиком",
+  "date": "2026-10-26",
+  "price": 600,
+  "images": [
+    "60/1"
+  ],
+  "occasions": [
+    "birthday",
+    "kids"
+  ],
+  "recipients": [
+    "woman",
+    "child"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Цукерки",
+    "В'язаний зайчик",
+    "Подарункова сумочка"
+  ],
+  "featured": false
+}

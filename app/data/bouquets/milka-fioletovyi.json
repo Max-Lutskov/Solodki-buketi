@@ -1,0 +1,25 @@
+{
+  "id": 46,
+  "title": "Фіолетовий з Milka",
+  "date": "2026-10-26",
+  "price": 350,
+  "images": [
+    "46/1"
+  ],
+  "occasions": [
+    "kids",
+    "birthday"
+  ],
+  "recipients": [
+    "child",
+    "woman"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "S",
+  "composition": [
+    "Milka",
+    "Декоративні троянди"
+  ],
+  "featured": false
+}

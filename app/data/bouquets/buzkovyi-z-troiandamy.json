@@ -1,0 +1,24 @@
+{
+  "id": 23,
+  "title": "Бузковий букет з трояндами",
+  "date": "2026-10-26",
+  "price": 600,
+  "images": [
+    "23/1"
+  ],
+  "occasions": [
+    "birthday",
+    "march8"
+  ],
+  "recipients": [
+    "woman"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Шоколадні цукерки",
+    "Декоративні троянди"
+  ],
+  "featured": false
+}

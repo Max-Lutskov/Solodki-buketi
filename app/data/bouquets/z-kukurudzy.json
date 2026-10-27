@@ -1,0 +1,24 @@
+{
+  "id": 29,
+  "title": "Букет з кукурудзи",
+  "date": "2026-10-26",
+  "price": 600,
+  "images": [
+    "29/1"
+  ],
+  "occasions": [
+    "birthday"
+  ],
+  "recipients": [
+    "woman",
+    "man"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Качани кукурудзи",
+    "Вишитий рушник"
+  ],
+  "featured": false
+}

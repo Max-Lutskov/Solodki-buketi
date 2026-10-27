@@ -1,0 +1,25 @@
+{
+  "id": 24,
+  "title": "«Найкращій вчительці» рожевий",
+  "date": "2026-10-26",
+  "price": 600,
+  "images": [
+    "24/1"
+  ],
+  "occasions": [
+    "teacher"
+  ],
+  "recipients": [
+    "teacher",
+    "woman"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Raffaello",
+    "Декоративні троянди",
+    "Топер «Найкращій вчительці»"
+  ],
+  "featured": false
+}

@@ -1,0 +1,26 @@
+{
+  "id": 7,
+  "title": "Сумочка «Just for you»",
+  "date": "2026-10-26",
+  "price": 500,
+  "images": [
+    "7/1"
+  ],
+  "occasions": [
+    "birthday",
+    "march8",
+    "valentine"
+  ],
+  "recipients": [
+    "woman"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Цукерки",
+    "Декоративні троянди",
+    "Подарункова сумочка"
+  ],
+  "featured": false
+}

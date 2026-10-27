@@ -1,0 +1,24 @@
+{
+  "id": 44,
+  "title": "Білий мінібукет",
+  "date": "2026-10-26",
+  "price": 350,
+  "images": [
+    "44/1"
+  ],
+  "occasions": [
+    "kids",
+    "birthday"
+  ],
+  "recipients": [
+    "child",
+    "woman"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "S",
+  "composition": [
+    "Шоколадні цукерки"
+  ],
+  "featured": false
+}

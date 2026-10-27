@@ -1,0 +1,25 @@
+{
+  "id": 50,
+  "title": "Новорічний з льодяниками",
+  "date": "2026-10-26",
+  "price": 450,
+  "images": [
+    "50/1"
+  ],
+  "occasions": [
+    "newyear",
+    "kids"
+  ],
+  "recipients": [
+    "child"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "S",
+  "composition": [
+    "Цукерки",
+    "Льодяники-палички",
+    "Новорічні кульки"
+  ],
+  "featured": false
+}

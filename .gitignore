@@ -28,3 +28,6 @@ photos/
 
 # Тимчасові файли wrangler
 .wrangler
+
+# Python
+__pycache__/

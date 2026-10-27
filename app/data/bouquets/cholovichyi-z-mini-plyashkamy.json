@@ -1,0 +1,27 @@
+{
+  "id": 32,
+  "title": "Чоловічий букет з мініатюрами",
+  "date": "2026-10-26",
+  "price": 1300,
+  "images": [
+    "32/1"
+  ],
+  "occasions": [
+    "man",
+    "birthday"
+  ],
+  "recipients": [
+    "man",
+    "colleagues"
+  ],
+  "alcohol": "Мініатюрні пляшки",
+  "shippable": false,
+  "size": "L",
+  "composition": [
+    "Мініатюрні пляшки",
+    "Камамбер",
+    "Лимони",
+    "Шоколадні батончики"
+  ],
+  "featured": false
+}

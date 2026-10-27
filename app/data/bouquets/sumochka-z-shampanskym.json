@@ -1,0 +1,28 @@
+{
+  "id": 18,
+  "title": "Сумочка з цукерками й шампанським",
+  "date": "2026-10-26",
+  "price": 800,
+  "images": [
+    "18/1",
+    "18/2"
+  ],
+  "occasions": [
+    "birthday",
+    "march8"
+  ],
+  "recipients": [
+    "woman",
+    "colleagues"
+  ],
+  "alcohol": "Шампанське",
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Цукерки",
+    "Шоколад",
+    "Шампанське",
+    "Подарункова сумочка"
+  ],
+  "featured": false
+}

@@ -1,0 +1,25 @@
+{
+  "id": 28,
+  "title": "Корисний букет для господині",
+  "date": "2026-10-26",
+  "price": 550,
+  "images": [
+    "28/1"
+  ],
+  "occasions": [
+    "birthday",
+    "march8"
+  ],
+  "recipients": [
+    "woman",
+    "colleagues"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Губки й побутові дрібниці",
+    "Смаколики"
+  ],
+  "featured": false
+}

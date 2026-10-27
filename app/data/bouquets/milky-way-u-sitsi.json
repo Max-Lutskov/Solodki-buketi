@@ -1,0 +1,25 @@
+{
+  "id": 59,
+  "title": "Milky Way у сітці",
+  "date": "2026-10-26",
+  "price": 450,
+  "images": [
+    "59/1"
+  ],
+  "occasions": [
+    "kids",
+    "birthday"
+  ],
+  "recipients": [
+    "child",
+    "man"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "S",
+  "composition": [
+    "Milky Way",
+    "Шоколадні батончики"
+  ],
+  "featured": false
+}

@@ -1,0 +1,25 @@
+{
+  "id": 16,
+  "title": "Рожевий букет з Raffaello і Ferrero",
+  "date": "2026-10-26",
+  "price": 850,
+  "images": [
+    "16/1"
+  ],
+  "occasions": [
+    "birthday",
+    "march8"
+  ],
+  "recipients": [
+    "woman"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Raffaello",
+    "Ferrero Rocher",
+    "Декоративні троянди"
+  ],
+  "featured": false
+}

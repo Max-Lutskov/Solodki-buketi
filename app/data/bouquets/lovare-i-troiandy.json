@@ -1,0 +1,29 @@
+{
+  "id": 27,
+  "title": "Чай Lovare з трояндами",
+  "date": "2026-10-26",
+  "price": 400,
+  "images": [
+    "27/1",
+    "27/2"
+  ],
+  "occasions": [
+    "birthday",
+    "march8",
+    "teacher"
+  ],
+  "recipients": [
+    "woman",
+    "teacher",
+    "colleagues"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "S",
+  "composition": [
+    "Чай Lovare",
+    "Цукерки",
+    "Декоративні троянди"
+  ],
+  "featured": false
+}

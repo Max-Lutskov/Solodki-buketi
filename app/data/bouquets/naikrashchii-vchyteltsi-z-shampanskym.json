@@ -1,0 +1,26 @@
+{
+  "id": 11,
+  "title": "«Найкращій вчительці» з шампанським",
+  "date": "2026-10-26",
+  "price": 1500,
+  "images": [
+    "11/1"
+  ],
+  "occasions": [
+    "teacher",
+    "birthday"
+  ],
+  "recipients": [
+    "teacher",
+    "woman"
+  ],
+  "alcohol": "Шампанське",
+  "shippable": false,
+  "size": "XL",
+  "composition": [
+    "Ferrero Rocher",
+    "Шампанське",
+    "Топер «Найкращій вчительці»"
+  ],
+  "featured": true
+}

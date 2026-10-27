@@ -1,0 +1,28 @@
+{
+  "id": 37,
+  "title": "Короб смаколиків для чоловіка",
+  "date": "2026-10-26",
+  "price": 1500,
+  "images": [
+    "37/1"
+  ],
+  "occasions": [
+    "man",
+    "birthday"
+  ],
+  "recipients": [
+    "man",
+    "colleagues"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "XL",
+  "composition": [
+    "Сири",
+    "Апельсини",
+    "Фісташки",
+    "Ferrero Rocher",
+    "Кава"
+  ],
+  "featured": false
+}

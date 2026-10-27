@@ -1,0 +1,27 @@
+{
+  "id": 25,
+  "title": "Шампанське й троянди в коробці",
+  "date": "2026-10-26",
+  "price": 1200,
+  "images": [
+    "25/1"
+  ],
+  "occasions": [
+    "birthday",
+    "march8",
+    "wedding"
+  ],
+  "recipients": [
+    "woman"
+  ],
+  "alcohol": "Шампанське",
+  "shippable": false,
+  "size": "L",
+  "composition": [
+    "Шампанське",
+    "Raffaello",
+    "Декоративні троянди",
+    "Капелюшна коробка"
+  ],
+  "featured": false
+}

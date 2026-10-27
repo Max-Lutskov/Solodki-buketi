@@ -1,0 +1,25 @@
+{
+  "id": 31,
+  "title": "Персиковий букет з трояндами",
+  "date": "2026-10-26",
+  "price": 650,
+  "images": [
+    "31/1"
+  ],
+  "occasions": [
+    "birthday",
+    "march8"
+  ],
+  "recipients": [
+    "woman",
+    "teacher"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Цукерки",
+    "Декоративні троянди"
+  ],
+  "featured": false
+}

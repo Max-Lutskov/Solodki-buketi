@@ -32,6 +32,7 @@ export const occasions: Option[] = [
   { slug: 'birthday', label: 'День народження' },
   { slug: 'march8', label: '8 Березня' },
   { slug: 'valentine', label: '14 лютого' },
+  { slug: 'newyear', label: 'Новий рік' },
   { slug: 'teacher', label: 'Вчителю' },
   { slug: 'man', label: 'Чоловіку' },
   { slug: 'kids', label: 'Дитині' },
@@ -56,12 +57,12 @@ export interface BudgetRange {
   max: number | null
 }
 
-// MOCK: межі бюджетів. Межа належить верхньому діапазону: букет за 800 грн — у «800–1 500»
+// Межі під реальні ціни з галереї (200–1 800 грн, 27.10.2026). Межа належить верхньому діапазону: букет за 500 грн — у «500–800»
 export const budgetRanges: BudgetRange[] = [
-  { slug: 'do-800', label: 'до 800 грн', min: 0, max: 800 },
-  { slug: '800-1500', label: '800–1 500 грн', min: 800, max: 1500 },
-  { slug: '1500-2500', label: '1 500–2 500 грн', min: 1500, max: 2500 },
-  { slug: 'vid-2500', label: 'від 2 500 грн', min: 2500, max: null }
+  { slug: 'do-500', label: 'до 500 грн', min: 0, max: 500 },
+  { slug: '500-800', label: '500–800 грн', min: 500, max: 800 },
+  { slug: '800-1200', label: '800–1 200 грн', min: 800, max: 1200 },
+  { slug: 'vid-1200', label: 'від 1 200 грн', min: 1200, max: null }
 ]
 
 export const sizes = {

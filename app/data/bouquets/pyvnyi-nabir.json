@@ -1,0 +1,25 @@
+{
+  "id": 39,
+  "title": "Пивний набір",
+  "date": "2026-10-26",
+  "price": 800,
+  "images": [
+    "39/1"
+  ],
+  "occasions": [
+    "man",
+    "birthday"
+  ],
+  "recipients": [
+    "man"
+  ],
+  "alcohol": "Пиво",
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Amstel, «Львівське»",
+    "Горішки",
+    "Камамбер"
+  ],
+  "featured": false
+}

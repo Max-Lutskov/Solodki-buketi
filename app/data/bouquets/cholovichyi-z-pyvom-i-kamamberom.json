@@ -1,0 +1,26 @@
+{
+  "id": 38,
+  "title": "З пивом і камамбером",
+  "date": "2026-10-26",
+  "price": 600,
+  "images": [
+    "38/1"
+  ],
+  "occasions": [
+    "man",
+    "birthday"
+  ],
+  "recipients": [
+    "man"
+  ],
+  "alcohol": "Пиво",
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Пиво",
+    "Камамбер",
+    "Лимони",
+    "Ferrero Rocher"
+  ],
+  "featured": false
+}

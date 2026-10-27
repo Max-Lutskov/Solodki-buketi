@@ -1,0 +1,27 @@
+{
+  "id": 9,
+  "title": "Кошик з Raffaello і трояндами",
+  "date": "2026-10-26",
+  "price": 400,
+  "images": [
+    "9/1"
+  ],
+  "occasions": [
+    "birthday",
+    "march8",
+    "teacher"
+  ],
+  "recipients": [
+    "woman",
+    "teacher"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "S",
+  "composition": [
+    "Raffaello",
+    "Декоративні троянди",
+    "Кошик з ручками"
+  ],
+  "featured": false
+}

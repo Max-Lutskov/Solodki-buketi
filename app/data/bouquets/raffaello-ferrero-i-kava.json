@@ -1,0 +1,28 @@
+{
+  "id": 19,
+  "title": "Raffaello, Ferrero і кава",
+  "date": "2026-10-26",
+  "price": 1200,
+  "images": [
+    "19/1",
+    "19/2"
+  ],
+  "occasions": [
+    "birthday",
+    "wedding"
+  ],
+  "recipients": [
+    "woman",
+    "colleagues"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "L",
+  "composition": [
+    "Raffaello",
+    "Ferrero Rocher",
+    "Кава Lavazza",
+    "Капелюшна коробка"
+  ],
+  "featured": true
+}

@@ -1,0 +1,28 @@
+{
+  "id": 20,
+  "title": "Чай Lovare з цукерками",
+  "date": "2026-10-26",
+  "price": 400,
+  "images": [
+    "20/1",
+    "20/2"
+  ],
+  "occasions": [
+    "birthday",
+    "march8",
+    "teacher"
+  ],
+  "recipients": [
+    "woman",
+    "teacher",
+    "colleagues"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "S",
+  "composition": [
+    "Чай Lovare",
+    "Цукерки «Шарм»"
+  ],
+  "featured": false
+}

@@ -1,0 +1,27 @@
+{
+  "id": 5,
+  "title": "Ferrero і троянди в капелюшній коробці",
+  "date": "2026-10-26",
+  "price": 600,
+  "images": [
+    "5/1"
+  ],
+  "occasions": [
+    "birthday",
+    "march8",
+    "valentine"
+  ],
+  "recipients": [
+    "woman"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Ferrero Rocher",
+    "Шоколад",
+    "Декоративні троянди",
+    "Капелюшна коробка"
+  ],
+  "featured": true
+}

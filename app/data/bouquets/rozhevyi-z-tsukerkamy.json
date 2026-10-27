@@ -1,0 +1,23 @@
+{
+  "id": 52,
+  "title": "Рожевий з цукерками",
+  "date": "2026-10-26",
+  "price": 350,
+  "images": [
+    "52/1"
+  ],
+  "occasions": [
+    "kids",
+    "birthday"
+  ],
+  "recipients": [
+    "child"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "S",
+  "composition": [
+    "Цукерки"
+  ],
+  "featured": false
+}

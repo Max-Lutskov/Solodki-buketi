@@ -1,0 +1,26 @@
+{
+  "id": 26,
+  "title": "Ferrero і білі троянди",
+  "date": "2026-10-26",
+  "price": 1200,
+  "images": [
+    "26/1"
+  ],
+  "occasions": [
+    "birthday",
+    "wedding"
+  ],
+  "recipients": [
+    "woman",
+    "colleagues"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "L",
+  "composition": [
+    "Ferrero Rocher",
+    "Декоративні троянди",
+    "Сітка й темно-зелена плівка"
+  ],
+  "featured": false
+}

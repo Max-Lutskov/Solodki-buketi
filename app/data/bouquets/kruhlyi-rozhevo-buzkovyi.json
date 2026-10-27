@@ -1,0 +1,24 @@
+{
+  "id": 47,
+  "title": "Круглий рожево-бузковий",
+  "date": "2026-10-26",
+  "price": 350,
+  "images": [
+    "47/1"
+  ],
+  "occasions": [
+    "birthday"
+  ],
+  "recipients": [
+    "child",
+    "woman"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "S",
+  "composition": [
+    "Цукерки",
+    "Декоративна троянда"
+  ],
+  "featured": false
+}

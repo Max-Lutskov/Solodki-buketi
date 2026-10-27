@@ -1,0 +1,26 @@
+{
+  "id": 8,
+  "title": "Букет з ананасом",
+  "date": "2026-10-26",
+  "price": 800,
+  "images": [
+    "8/1"
+  ],
+  "occasions": [
+    "birthday",
+    "march8"
+  ],
+  "recipients": [
+    "woman",
+    "colleagues"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Ананас",
+    "Мармелад",
+    "Raffaello"
+  ],
+  "featured": true
+}

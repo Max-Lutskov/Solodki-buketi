@@ -1,0 +1,25 @@
+{
+  "id": 6,
+  "title": "Великий букет з Raffaello",
+  "date": "2026-10-26",
+  "price": 1100,
+  "images": [
+    "6/1"
+  ],
+  "occasions": [
+    "birthday",
+    "march8",
+    "wedding"
+  ],
+  "recipients": [
+    "woman"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "L",
+  "composition": [
+    "Raffaello",
+    "Цукерки в рожевій обгортці"
+  ],
+  "featured": false
+}

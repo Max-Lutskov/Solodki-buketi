@@ -1,0 +1,27 @@
+{
+  "id": 34,
+  "title": "Букет на рушнику з Oakheart",
+  "date": "2026-10-26",
+  "price": 1800,
+  "images": [
+    "34/1"
+  ],
+  "occasions": [
+    "man",
+    "birthday",
+    "wedding"
+  ],
+  "recipients": [
+    "man"
+  ],
+  "alcohol": "Ром Oakheart",
+  "shippable": false,
+  "size": "XL",
+  "composition": [
+    "Ром Oakheart",
+    "Камамбер",
+    "Лимони",
+    "Вишитий рушник"
+  ],
+  "featured": true
+}

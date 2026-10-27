@@ -1,0 +1,24 @@
+{
+  "id": 49,
+  "title": "Блакитний з батончиками",
+  "date": "2026-10-26",
+  "price": 450,
+  "images": [
+    "49/1"
+  ],
+  "occasions": [
+    "kids",
+    "birthday"
+  ],
+  "recipients": [
+    "child",
+    "man"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "S",
+  "composition": [
+    "Шоколадні батончики"
+  ],
+  "featured": false
+}

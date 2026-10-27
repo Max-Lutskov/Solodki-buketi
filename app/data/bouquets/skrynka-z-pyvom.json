@@ -1,0 +1,26 @@
+{
+  "id": 43,
+  "title": "Дерев'яна скринька з пивом",
+  "date": "2026-10-26",
+  "price": 800,
+  "images": [
+    "43/1"
+  ],
+  "occasions": [
+    "man",
+    "birthday"
+  ],
+  "recipients": [
+    "man"
+  ],
+  "alcohol": "Пиво",
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Пиво",
+    "Горішки",
+    "Снеки до пива",
+    "Дерев'яна скринька"
+  ],
+  "featured": false
+}

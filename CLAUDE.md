@@ -17,7 +17,8 @@
 - `import.meta.glob` працює лише у Vite, тож **сервер (`server/`) не імпортує `bouquets.ts`**: форма шле `ref` (slug) і `refTitle`
 - Лендінги міст — `app/data/landings.ts` (файл читає й `nuxt.config.ts`, тому без аліасів `~`), сторінка — тонка обгортка `<LandingPage path="…" />`
 - Телефон, Viber і Telegram — +380672680947 (Telegram за номером, без username). Самовивіз — Браїлів, вартість доставки обговорюється (підтверджено 23.10.2026)
-- **MOCK:** усі 9 букетів (`"mock": true`, без фото, ціни вигадані — замінити реальними), межі бюджетів, шкала розмірів, час відповіді, тексти «Про мене» і доставки (вартість, зони, оплата), FAQ. Шукати `MOCK` у коді
+- Букети — 62 реальні роботи з цінами з Telegram мами (26.10.2026), імпорт `scripts/import_telegram.py` (там же розмітка приводів/кому/алкоголю, назви й склад — проставлені за фото, уточнити в Тетяни). Без ціни — `photos/bez-tsiny/README.md`. Дата у всіх однакова, розмір — від ціни
+- **MOCK:** шкала розмірів, час відповіді, тексти «Про мене» і доставки (вартість, зони, оплата), FAQ. Шукати `MOCK` у коді
 - **Не додавати:** вигаданих відгуків, цифр («500 букетів»), фактів про доставку/оплату, яких Тетяна не підтвердила
 
 ## Дизайн
@@ -28,10 +29,10 @@
 - Без ALL-CAPS лейблів, номери — лише в «Як замовити» (це послідовність)
 
 ## Фото
-`public/images/bouquets/<id>/<n>.jpg` (до 1600 px, для schema/OG) + WebP 400/600/800/1200/1600 для `srcset`: після додавання — `npm run images`. У JSON букета — `"images": ["<id>/1", …]`. Оригінали з телефона — у `photos/` (gitignore). Фон прибирати, підкладка однакова.
+`public/images/bouquets/<id>/<n>.jpg` (до 1600 px, для schema/OG) + WebP 400/600/800/1200/1600 для `srcset`: після додавання — `npm run images`. У JSON букета — `"images": ["<id>/1", …]`. Оригінали з телефона — у `photos/` (gitignore). Фон прибирати, підкладка однакова: `scripts/process_images.py --model birefnet-general-lite` (rembg, venv у `photos/.venv`; повна `birefnet-general` з'їдає RAM і валить WebStorm, isnet лишає «туман» на білій плівці) → `scripts/retouch.py` (правила для окремих фото) → вирізаний букет кладеться на `rose` у 3:4 (`compose()` в `import_telegram.py`). Фото, які треба перезняти (руки в кадрі тощо), — `photos/perezniaty.md`.
 
 ## Сторінки
-`/`, `/roboty/` (фільтри в query: `budget`, `pryvid`, `komu`, `alkohol`, `sort`; читаються лише після монтування, бо сторінка пререндерена без параметрів), `/roboty/<slug>/`, `/zibraty-svij/` (`?ref=<slug>`), `/dostavka/`, `/pro-mene/`, `/kontakty/`, `/vinnytsia/`, `/zhmerynka/`, `/pryvatnist/`. Усі пререндеряться, адреси зі слешем у кінці.
+`/`, `/roboty/` (фільтри в query: `budget`, `pryvid`, `komu`, `alkohol` — кілька значень через кому, у групі «або», між групами «і»; `sort`; читаються лише після монтування, бо сторінка пререндерена без параметрів), `/roboty/<slug>/`, `/zibraty-svij/` (`?ref=<slug>`), `/dostavka/`, `/pro-mene/`, `/kontakty/`, `/vinnytsia/`, `/zhmerynka/`, `/pryvatnist/`. Усі пререндеряться, адреси зі слешем у кінці.
 
 SEO: `Florist` на всіх сторінках (`app.vue`), `Product`+`Offer` (PreOrder) на букетах, `FAQPage`, `BreadcrumbList` — `app/utils/schema.ts`. Мета — `usePageMeta()`. Canonical без query. Індексація вимкнена (`site.indexable: false`), поки немає домену.
 

@@ -1,0 +1,26 @@
+{
+  "id": 3,
+  "title": "Бірюзовий букет з рожевими цукерками",
+  "date": "2026-10-26",
+  "price": 400,
+  "images": [
+    "3/1"
+  ],
+  "occasions": [
+    "birthday",
+    "march8"
+  ],
+  "recipients": [
+    "woman",
+    "teacher",
+    "colleagues"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "S",
+  "composition": [
+    "Цукерки в рожевій обгортці",
+    "Плівка й стрічки"
+  ],
+  "featured": false
+}

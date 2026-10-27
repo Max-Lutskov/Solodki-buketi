@@ -1,0 +1,26 @@
+{
+  "id": 1,
+  "title": "Букет з цукерок у смарагдовій плівці",
+  "date": "2026-10-26",
+  "price": 600,
+  "images": [
+    "1/1"
+  ],
+  "occasions": [
+    "birthday",
+    "march8"
+  ],
+  "recipients": [
+    "woman",
+    "teacher",
+    "colleagues"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Цукерки",
+    "Плівка й атласні стрічки"
+  ],
+  "featured": false
+}

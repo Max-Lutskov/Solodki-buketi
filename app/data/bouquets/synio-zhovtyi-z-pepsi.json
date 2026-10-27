@@ -1,0 +1,25 @@
+{
+  "id": 61,
+  "title": "Синьо-жовтий з Pepsi",
+  "date": "2026-10-26",
+  "price": 500,
+  "images": [
+    "61/1"
+  ],
+  "occasions": [
+    "birthday"
+  ],
+  "recipients": [
+    "child",
+    "man",
+    "woman"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Pepsi",
+    "Цукерки"
+  ],
+  "featured": false
+}

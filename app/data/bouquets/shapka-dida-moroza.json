@@ -1,0 +1,25 @@
+{
+  "id": 48,
+  "title": "Шапка Діда Мороза",
+  "date": "2026-10-26",
+  "price": 600,
+  "images": [
+    "48/1"
+  ],
+  "occasions": [
+    "newyear",
+    "kids"
+  ],
+  "recipients": [
+    "child"
+  ],
+  "alcohol": null,
+  "shippable": false,
+  "size": "M",
+  "composition": [
+    "Цукерки",
+    "Шоколад",
+    "Новорічний декор"
+  ],
+  "featured": true
+}

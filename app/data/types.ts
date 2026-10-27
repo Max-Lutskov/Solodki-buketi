@@ -24,6 +24,8 @@ export interface BouquetFile {
   description?: string
   /** Показувати на головній */
   featured: boolean
+  /** Букет в арці на першому екрані головної (один на сайт) */
+  hero?: boolean
   /** Тимчасовий приклад, поки немає реальних робіт. Прибрати, коли замінимо */
   mock?: boolean
 }

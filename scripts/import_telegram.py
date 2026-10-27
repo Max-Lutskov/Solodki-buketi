@@ -97,7 +97,12 @@ B = [
     (2056581, 600, "sumochka-z-zaichykom", "Сумочка з плетеним зайчиком", "b kids", "W C", None, ["Цукерки", "В'язаний зайчик", "Подарункова сумочка"], False),
     (2056582, 500, "synio-zhovtyi-z-pepsi", "Синьо-жовтий з Pepsi", "b", "C M W", None, ["Pepsi", "Цукерки"], False),
     (2056583, 550, "skrynka-z-dnem-narodzhennia", "Скринька «З днем народження»", "b", "W M K", None, ["Цукерки", "Дерев'яна скринька", "Топер «З днем народження»"], False),
+    # У чаті було «700-800..?», ціну 800 підтвердили 27.10.2026. Додано в кінець, щоб не зсувати номери
+    (2056437, 800, "chervonyi-z-raffaello", "Червоний букет з Raffaello", "b m v", "W", None, ["Raffaello", "Червона плівка й стрічки"], True),
 ]
+
+# Букет в арці на першому екрані головної
+HERO = 2056437
 
 SIZES = [(500, "S"), (900, "M"), (1500, "L")]
 
@@ -159,6 +164,7 @@ def main() -> None:
             "size": size_of(price),
             "composition": comp,
             "featured": featured,
+            **({"hero": True} if mid == HERO else {}),
         }
         DATA.mkdir(exist_ok=True)
         (DATA / f"{slug}.json").write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", "utf-8", newline="\n")

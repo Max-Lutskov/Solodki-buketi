@@ -10,7 +10,6 @@ export interface UnpricedBouquet {
 }
 
 export const unpriced: UnpricedBouquet[] = [
-  { id: 2056437, group: 'Без підпису', photos: ['2056437_1'], note: '700-800..?' },
   { id: 2056462, group: 'Жіночі', photos: ['2056462_1'] },
   { id: 2056483, group: 'Жіночі', photos: ['2056483_1', '2056483_2'] },
   { id: 2056485, group: 'Жіночі', photos: ['2056485_1'] },

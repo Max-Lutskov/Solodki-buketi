@@ -9,7 +9,8 @@ usePageMeta({
 })
 useJsonLd(() => [faqSchema(faq)])
 
-const featured = bouquets.filter(b => b.featured)
+// Букет з hero — першим і в арці, і серед робіт на головній
+const featured = bouquets.filter(b => b.featured).sort((a, b) => Number(!!b.hero) - Number(!!a.hero))
 const hero = featured[0] ?? bouquets[0]!
 const latest = (featured.length >= 4 ? featured : bouquets).slice(0, 8)
 </script>

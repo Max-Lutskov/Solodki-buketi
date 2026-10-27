@@ -53,10 +53,8 @@ export default defineNuxtConfig({
   },
 
   // Сторінки однакові для всіх, тож збираємо їх під час білду. Заявки (/api/order) обробляє Worker.
-  // /tsiny/ — службова сторінка для Тетяни (вписати ціни), не індексується й не потрапляє в sitemap
   routeRules: {
-    ...Object.fromEntries(staticRoutes.map(path => [path, { prerender: true }])),
-    '/tsiny/': { prerender: true, robots: false }
+    ...Object.fromEntries(staticRoutes.map(path => [path, { prerender: true }]))
   },
 
   // Пререндер бере ту саму сторінку ще й без слеша в кінці. Такі адреси не потрібні (на сайті всі зі слешем),
@@ -101,8 +99,7 @@ export default defineNuxtConfig({
 
   sitemap: {
     // Усі адреси відомі під час збірки, тож sitemap.xml пререндериться і Worker його не генерує
-    zeroRuntime: true,
-    exclude: ['/tsiny/']
+    zeroRuntime: true
   },
 
   // Заявки з сайту йдуть у Telegram (див. .env.example)

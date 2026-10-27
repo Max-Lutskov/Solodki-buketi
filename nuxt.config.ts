@@ -53,7 +53,11 @@ export default defineNuxtConfig({
   },
 
   // Сторінки однакові для всіх, тож збираємо їх під час білду. Заявки (/api/order) обробляє Worker.
-  routeRules: Object.fromEntries(staticRoutes.map(path => [path, { prerender: true }])),
+  // /tsiny/ — службова сторінка для Тетяни (вписати ціни), не індексується й не потрапляє в sitemap
+  routeRules: {
+    ...Object.fromEntries(staticRoutes.map(path => [path, { prerender: true }])),
+    '/tsiny/': { prerender: true, robots: false }
+  },
 
   // Пререндер бере ту саму сторінку ще й без слеша в кінці. Такі адреси не потрібні (на сайті всі зі слешем),
   // а на Windows дві копії ще й падають, пишучи один файл кешу (EPERM)
@@ -97,7 +101,8 @@ export default defineNuxtConfig({
 
   sitemap: {
     // Усі адреси відомі під час збірки, тож sitemap.xml пререндериться і Worker його не генерує
-    zeroRuntime: true
+    zeroRuntime: true,
+    exclude: ['/tsiny/']
   },
 
   // Заявки з сайту йдуть у Telegram (див. .env.example)

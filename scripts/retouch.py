@@ -18,8 +18,13 @@ LITE = ROOT / "photos/redo/lite/transparent"
 ISNET = ROOT / "photos/telegram-out/transparent"
 OUT = ROOT / "photos/final"
 
-# Де isnet вийшов краще за lite
-USE_ISNET = {"2056459_1"}
+# Фото на чорному фоні process_images.py вирізає не моделлю, а за темним (black_key): з'їдає темну плівку
+# й заливає чорне між ручками. Для них прогнали lite примусово (has_black_background = False)
+LITE_ON_BLACK = ROOT / "photos/redo/black/out/transparent"
+# А тут black_key кращий: темна підставка, ваза, рушник чи коробка — частина композиції, модель їх обрізає
+BLACK_KEY = {"2056448_1", "2056455_1", "2056455_2", "2056514_1", "2056519_1", "2056520_1"}
+# Де isnet вийшов краще за lite (lite відрізав вишиту корзинку)
+USE_ISNET = {"2056523_1"}
 # Руки, що заходять у кадр з краю
 HANDS = {"2056444_1", "2056449_1", "2056488_1", "2056513_1", "2056521_1", "2056524_1", "2056546_1",
          "2056547_1", "2056548_1", "2056551_1", "2056552_1", "2056556_1", "2056576_1", "2056577_1"}
@@ -122,8 +127,12 @@ def main() -> None:
         name = path.stem
         if name in SPECIAL:
             rgba = SPECIAL[name]()
+        elif name in USE_ISNET:
+            rgba = load(ISNET / path.name)
+        elif (LITE_ON_BLACK / path.name).exists() and name not in BLACK_KEY:
+            rgba = load(LITE_ON_BLACK / path.name)
         else:
-            rgba = load((ISNET if name in USE_ISNET else LITE) / path.name)
+            rgba = load(LITE / path.name)
         Image.fromarray(rgba).save(OUT / path.name, "WEBP", lossless=True)
     print(f"Готово → {OUT}")
 

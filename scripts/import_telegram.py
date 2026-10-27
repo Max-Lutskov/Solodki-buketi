@@ -15,8 +15,8 @@ from PIL import Image, ImageFilter
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "photos/final"
-# Букет обрізаний кадром, жодна модель не вирізає його цілим — поки ставимо оригінал. Потрібне нове фото
-RAW = {"2056477_1"}
+# Жодна модель не вирізає цілим (обрізаний кадром; коробка зливається з фоном) — поки ставимо оригінал. Потрібне нове фото
+RAW = {"2056477_1", "2056459_1"}
 DATA = ROOT / "app/data/bouquets"
 IMG = ROOT / "public/images/bouquets"
 DATE = "2026-10-26"
